@@ -1,1 +1,0 @@
-# InstiManage - Manage with Ease, Educate with Excellence
