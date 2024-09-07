@@ -60,21 +60,22 @@ const Pricing = () => {
         {pricingList.map((pricing, index) => (
           <div
             key={index}
-            className="bg-slate-50 border-2 flex flex-col rounded-lg p-4"
+            className="bg-slate-50 border-2 flex flex-col justify-between gap-4 rounded-lg p-4"
           >
-            <div className="border-b-2 pb-4">
-              <div>
-                <p className="text-sm">{pricing.title}</p>
-                {/* <p className="text-sm">{pricing.tag}</p> */}
-              </div>
-              <p className="text-sm">{pricing.price}</p>
-            </div>
-            <div className="pt-4">
-              {pricing.features.map((feature, index) => (
-                <div key={index}>
-                  <p className="text-sm">{feature}</p>
+            <div>
+              <div className="border-b-2 pb-4">
+                <div>
+                  <p className="text-sm">{pricing.title}</p>
                 </div>
-              ))}
+                <p className="text-sm">{pricing.price}</p>
+              </div>
+              <div className="pt-4">
+                {pricing.features.map((feature, index) => (
+                  <div key={index}>
+                    <p className="text-sm">{feature}</p>
+                  </div>
+                ))}
+              </div>
             </div>
             <button className="">{pricing.buttonText}</button>
           </div>
