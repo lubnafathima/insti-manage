@@ -1,7 +1,9 @@
+import { CheckCircleIcon } from "@heroicons/react/24/outline";
+
 const pricingList = [
   {
     title: "Free",
-    price: "$0 per month",
+    price: "$0",
     features: [
       "100 students included",
       "2GB of storage",
@@ -14,7 +16,7 @@ const pricingList = [
   {
     title: "Professional",
     tip: "Recommended",
-    price: "$15 per month",
+    price: "$15",
     features: [
       "500 users included",
       "10 GB of storage",
@@ -28,7 +30,7 @@ const pricingList = [
   },
   {
     title: "Enterprise",
-    price: "$30 per month",
+    price: "$30",
     features: [
       "1000 users included",
       "30 GB of storage",
@@ -65,19 +67,22 @@ const Pricing = () => {
             <div>
               <div className="border-b-2 pb-4">
                 <div>
-                  <p className="text-sm">{pricing.title}</p>
+                  <p className="text-lg font-semibold mb-2">{pricing.title}</p>
                 </div>
-                <p className="text-sm">{pricing.price}</p>
+                <p className="text-lg font-semibold">
+                  <span className="text-4xl">{pricing.price}</span> per month
+                </p>
               </div>
               <div className="pt-4">
                 {pricing.features.map((feature, index) => (
-                  <div key={index}>
+                  <div key={index} className="flex items-center gap-2 mb-2">
+                    <CheckCircleIcon aria-hidden="true" className="h-6 w-6 bg-blue-500 rounded-full text-white" />
                     <p className="text-sm">{feature}</p>
                   </div>
                 ))}
               </div>
             </div>
-            <button className="">{pricing.buttonText}</button>
+            <button className="bg-blue-400 p-2 rounded-md text-white border-2 border-blue-400 hover:bg-blue-500">{pricing.buttonText}</button>
           </div>
         ))}
       </div>

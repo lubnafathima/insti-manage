@@ -32,22 +32,22 @@ const FAQ = () => {
 
   return (
     <div className="w-11/12 lg:w-3/4 py-8 lg:py-20 border-b-2">
-      <div className="w-full lg:w-2/3 mx-auto">
+      <div className="w-full lg:w-2/3 mx-auto mb-8">
         <h2 className="text-center text-2xl font-semibold tracking-wider">
           Frequently asked questions
         </h2>
       </div>
       <div>
         {faqList.map((faq, index) => (
-          <div key={index}>
+          <div key={index} className="bg-slate-50 border-2 rounded-lg p-4 mb-2">
             <h3
-              className="text-lg font-medium cursor-pointer"
+              className="font-medium cursor-pointer"
               onClick={() => toggleFAQ(index)}
             >
               {faq.title}
             </h3>
             {isOpen === index && (
-              <p className="mt-2 text-gray-600">{faq.content}</p>
+              <p className="text-gray-600 text-sm border-t-2 pt-4 mt-4">{faq.content}</p>
             )}
           </div>
         ))}
