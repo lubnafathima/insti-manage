@@ -39,7 +39,7 @@ const Highlights = () => {
           <h2 className="text-center text-2xl font-semibold tracking-wider">
             Highlights
           </h2>
-          <p className="text-center py-2 text-gray-500">
+          <p className="text-center py-2 text-slate-400">
             Explore why our product stands out: adaptability, durability,
             user-friendly design, and innovation. Enjoy reliable customer
             support and precision in every detail.
@@ -53,7 +53,7 @@ const Highlights = () => {
             >
               <img src={highlight.icon} alt="" className="" />
               <h4 className="text-white">{highlight.title}</h4>
-              <p className="text-sm text-gray-500 mb-4 tracking-wide">
+              <p className="text-sm text-slate-300 mb-4 tracking-wide">
                 {highlight.content}
               </p>
             </div>
