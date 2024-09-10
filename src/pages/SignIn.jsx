@@ -27,7 +27,7 @@ const SignIn = () => {
               className="border rounded p-2 bg-gray-50"
             />
           </div>
-          <Link to="/home" className="text-sm rounded font-semibold tracking-wider p-2 text-white bg-[#0A66C2] shadow-sm shadow-[#021F3B] hover:bg-[#0959AA] text-center">
+          <Link to="/dashboard/home" className="text-sm rounded font-semibold tracking-wider p-2 text-white bg-[#0A66C2] shadow-sm shadow-[#021F3B] hover:bg-[#0959AA] text-center">
             Sign In
           </Link>
           <p className="text-sm text-center text-slate-600">
