@@ -71,7 +71,7 @@ const Footer = () => {
     <div className="w-11/12 lg:w-3/4 py-8 lg:py-20 divide-y-2 divide-gray-200 mx-auto flex flex-col gap-8">
       <div className="flex justify-between w-full">
         <div className="lg:w-2/3 md:w-1/2 w-full">
-          <img src={Logo} className="w-auto h-6" />
+          <img src={Logo} alt="InstiManage Logo" className="w-auto h-6" />
           <div>
             <h4 className="text-sm font-semibold text-gray-700 mt-4">Join the newsletter</h4>
             <p className="text-sm text-gray-500">Subscribe for weekly updates. No spams ever!</p>

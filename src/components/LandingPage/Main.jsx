@@ -5,8 +5,8 @@ const Main = () => {
   return (
     <div className="w-full min-h-screen bg-gradient-to-b from-[#CEE5FD] via-white to-white relative m-auto px-10">
       <Navbar />
-      <div className="w-full pt-28 flex flex-col justify-center items-center bg-slate-2">
-        <h1 className="mt-20 text-6xl font-bold text-center text-[#0A0A0A]">
+      <div className="w-full pt-14 md:pt-28 flex flex-col justify-center items-center bg-slate-2">
+        <h1 className="mt-20 text-6xl font-bold text-center text-[#0A0A0A] leading-tight">
           Manage <span className="text-[#0A66C2]">Effortlessly</span>
         </h1>
         <p className="text-[#4C5967] w-11/12 lg:w-1/2 text-center mt-6 mb-8">

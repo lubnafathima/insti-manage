@@ -81,6 +81,7 @@ const Testimonials = () => {
               <div className="w-full flex items-center gap-4">
                 <img
                   src={testimonial.image}
+                  alt="Testimonial Image"
                   className="w-10 h-10 rounded-full"
                 />
                 <div>
@@ -88,7 +89,7 @@ const Testimonials = () => {
                   <p className="text-xs text-gray-500">{testimonial.designation}</p>
                 </div>
               </div>
-              <img src={testimonial.logo} className="w-16 h-auto" />
+              <img src={testimonial.logo} alt="Testimonial Logo" className="w-16 h-auto" />
             </div>
           </div>
         ))}

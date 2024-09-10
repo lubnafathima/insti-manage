@@ -29,9 +29,11 @@ const featureList = [
 
 const Features = () => {
   const [img, setImg] = useState(featureList[0].msg);
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   const displayImg = (index) => {
     setImg(featureList[index].msg);
+    setSelectedIndex(index);
   };
   return (
     <div className="w-11/12 lg:w-3/4 py-8 lg:py-20 border-b-2">
@@ -46,18 +48,42 @@ const Features = () => {
         </p>
       </div>
       <div className="mt-8">
-        <div className="w-full flex justify-between gap-6">
-          <div className="w-1/2 shadow-inner border-b">{img}</div>
-          <div className="w-1/2 flex flex-col gap-3">
+        <div className="flex flex-col gap-4 md:hidden">
+          <div className="flex flex-wrap gap-2">
+            {featureList.map((feature, index) => (
+              <p
+                key={index}
+                className={`text-xs p-2 border rounded-full font-semibold tracking-wider cursor-pointer shadow-sm ${
+                  selectedIndex === index
+                    ? "bg-[#0A66C2] text-white border-[#0A66C2]"
+                    : "bg-slate-50 text-slate-500 hover:border-[#0A66C2] hover:bg-[#0A66C2] hover:text-white"
+                }`}
+                onClick={() => displayImg(index)}
+              >
+                {feature.title}
+              </p>
+            ))}
+          </div>
+          <div className="w-full shadow-inner border-b flex justify-center items-center">{img}</div>
+        </div>
+        <div className="w-full hidden md:flex lg:flex-row flex-col justify-between gap-6">
+          <div className="lg:w-1/2 w-full shadow-inner border-b flex justify-center items-center">{img}</div>
+          <div className="lg:w-1/2 w-full flex flex-col gap-3">
             {featureList.map((feature, index) => (
               <div
                 key={index}
                 onClick={() => displayImg(index)}
-                className="bg-slate-100 mb-2 cursor-pointer px-4 py-6 rounded-md"
+                className={`mb-2 cursor-pointer px-4 py-6 rounded-md ${
+                  selectedIndex === index
+                    ? "bg-[#0A66C2] text-white"
+                    : "bg-slate-100 hover:bg-slate-200"
+                }`}
               >
                 <p className="mb-6 text-2xl">{feature.icon}</p>
                 <h3 className="font-semibold mb-3">{feature.title}</h3>
-                <p className="text-sm text-gray-500">{feature.description}</p>
+                <p>
+                  {feature.description}
+                </p>
               </div>
             ))}
           </div>
