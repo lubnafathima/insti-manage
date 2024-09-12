@@ -19,7 +19,12 @@ const SignIn = () => {
           <div className="flex flex-col gap-2">
             <div className="flex justify-between gap-2">
               <label>Password</label>
-              <Link to="" className="text-sm underline hover:no-underline transition-all ease-in">Forgot Password?</Link>
+              <Link
+                to=""
+                className="text-sm underline hover:no-underline transition-all duration-300 ease-in-out"
+              >
+                Forgot Password?
+              </Link>
             </div>
             <input
               type="password"
@@ -27,7 +32,10 @@ const SignIn = () => {
               className="border rounded p-2 bg-gray-50"
             />
           </div>
-          <Link to="/dashboard/home" className="text-sm rounded font-semibold tracking-wider p-2 text-white bg-[#0A66C2] shadow-sm shadow-[#021F3B] hover:bg-[#0959AA] text-center">
+          <Link
+            to="/dashboard/home"
+            className="text-sm rounded font-semibold tracking-wider p-2 text-white bg-[#0A66C2] shadow-sm shadow-[#021F3B] hover:bg-[#0959AA] text-center"
+          >
             Sign In
           </Link>
           <p className="text-sm text-center text-slate-600">

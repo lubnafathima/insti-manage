@@ -4,11 +4,11 @@ import Navbar from "./Navbar";
 
 const Layout = () => {
   return (
-    <div className="flex w-full h-screen font-[Helvetica] tracking-wide">
+    <div className="relative flex w-full min-h-screen font-[Helvetica] tracking-wide">
       <SideBar />
-      <div className="grow w-full min-h-screen p-4">
+      <div className="md:ml-72 w-full min-h-screen h-full p-6 bg-slate-50">
         <Navbar />
-        <div className="py-4">
+        <div className="pt-4">
           <Outlet />
         </div>
       </div>

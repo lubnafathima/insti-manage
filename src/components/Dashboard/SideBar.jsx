@@ -11,7 +11,7 @@ const SideBar = () => {
   const [AnalyticsMenu, setAnalyticsMenu] = useState(false);
 
   return (
-    <div className="w-60 h-screen bg-slate-50 border-r md:flex flex-col justify-between gap-2 p-4 hidden">
+    <div className="fixed w-72 h-screen bg-slate-100 border-r md:flex flex-col justify-between gap-2 p-4 hidden">
       <div>
         <img
           src={Logo}
@@ -75,7 +75,7 @@ const SideBar = () => {
             <p className="text-xs">john@email.com</p>
           </div>
         </div>
-        <p className="cursor-pointer rounded-full transition-all hover:bg-slate-200 p-1">
+        <p className="cursor-pointer rounded-full transition-all duration-300 ease-in-out hover:bg-slate-200 p-1">
           <EllipsisVerticalIcon className="h-6 w-6" />
         </p>
       </div>
