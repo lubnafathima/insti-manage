@@ -1,10 +1,11 @@
+import InstiCompo from "../../components/Dashboard/Institutes/InstituteComponent";
 
 const Institutes = () => {
   return (
-    <div>
-      Institutes
-    </div>
-  )
-}
+    <>
+      <InstiCompo />
+    </>
+  );
+};
 
-export default Institutes
+export default Institutes;
