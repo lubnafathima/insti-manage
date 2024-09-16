@@ -11,7 +11,7 @@ const SignIn = () => {
           <div className="flex flex-col gap-2">
             <label>Email</label>
             <input
-              type="email"
+              type="text"
               placeholder="your@email.com"
               className="border rounded p-2 bg-gray-50"
             />

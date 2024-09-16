@@ -3,13 +3,17 @@ import LandingPage from "./pages/LandingPage";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Layout from "./components/Dashboard/Layout";
-import Home from "./pages/Dashboard/Home";
-import Institutes from "./pages/Dashboard/Institutes";
-import Settings from "./pages/Dashboard/Settings";
-import Help from "./pages/Dashboard/Help";
-import Reports from "./pages/Dashboard/Analytics/Reports";
-import Payments from "./pages/Dashboard/Analytics/Payments";
-import Activities from "./pages/Dashboard/Analytics/Activities";
+// ADMIN
+import Home from "./pages/Dashboard/Admin/Home";
+import Institutes from "./pages/Dashboard/Admin/Institutes";
+import Settings from "./pages/Dashboard/Admin/Settings";
+import Help from "./pages/Dashboard/Admin/Help";
+import Reports from "./pages/Dashboard/Admin/Analytics/Reports";
+import Payments from "./pages/Dashboard/Admin/Analytics/Payments";
+import Activities from "./pages/Dashboard/Admin/Analytics/Activities";
+// INSTITUTE
+// TEACHER
+// STUDENT
 
 function App() {
   return (
