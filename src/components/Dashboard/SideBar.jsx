@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { EllipsisVerticalIcon } from "@heroicons/react/24/solid";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import { MENU_LIST } from "../../utils/Constants";
+import { MENU_LIST } from "../../utils/Helpers";
 import Image1 from "../../assets/images/img1.jpg";
 import Logo from "../../assets/logo/logo.png";
 

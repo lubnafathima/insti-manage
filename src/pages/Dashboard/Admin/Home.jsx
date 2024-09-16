@@ -1,8 +1,8 @@
-import Widges from "../../../components/Dashboard/Home/Widges";
-import Recent from "../../../components/Dashboard/Home/Recent";
-import TopInsti from "../../../components/Dashboard/Home/TopInsti";
-import Notification from "../../../components/Dashboard/Home/Notification";
-import QuickAccess from "../../../components/Dashboard/Home/QuickAccess";
+import Widges from "../../../components/Dashboard/Admin/Home/Widges";
+import Recent from "../../../components/Dashboard/Admin/Home/Recent";
+import TopInsti from "../../../components/Dashboard/Admin/Home/TopInsti";
+import Notification from "../../../components/Dashboard/Admin/Home/Notification";
+import QuickAccess from "../../../components/Dashboard/Admin/Home/QuickAccess";
 
 const Home = () => {
   return (

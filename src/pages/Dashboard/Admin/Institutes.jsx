@@ -1,4 +1,4 @@
-import InstiCompo from "../../../components/Dashboard/Institutes/InstituteComponent";
+import InstiCompo from "../../../components/Dashboard/Admin/Institutes/InstituteComponent";
 
 const Institutes = () => {
   return (

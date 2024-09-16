@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { INSTI_LIST } from "../../../utils/Constants";
+import { INSTI_LIST } from "../../../../utils/Helpers";
 import InstituteHeader from "./InstituteHeader";
 import InstituteList from "./InstituteList";
 import Pagination from "./Pagination";
