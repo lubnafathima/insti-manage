@@ -2,7 +2,7 @@
 const Home = () => {
   return (
     <div>
-      Teacher Home
+      Institutes Home
     </div>
   )
 }

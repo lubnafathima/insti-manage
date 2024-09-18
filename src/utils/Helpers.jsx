@@ -7,12 +7,12 @@ export const MENU_LIST = [
   {
     name: "Home",
     icon: <FaHome className="w-6 h-6" />,
-    path: "/dashboard/home",
+    path: "/admin/home",
   },
   {
     name: "Institutes",
     icon: <FaUniversity className="w-6 h-6" />,
-    path: "/dashboard/institutes",
+    path: "/admin/institutes",
   },
   {
     name: "Analytics",
@@ -20,17 +20,17 @@ export const MENU_LIST = [
     submenu: [
       {
         name: "Reports",
-        path: "/dashboard/reports",
+        path: "/admin/reports",
         icon: <BiSolidReport className="w-6 h-6 ml-8" />,
       },
       {
         name: "Payments",
-        path: "/dashboard/payments",
+        path: "/admin/payments",
         icon: <MdPayments className="w-6 h-6 ml-8" />,
       },
       {
         name: "Activities",
-        path: "/dashboard/activities",
+        path: "/admin/activities",
         icon: <TbGraphFilled className="w-6 h-6 ml-8" />,
       },
     ],
@@ -38,12 +38,12 @@ export const MENU_LIST = [
   {
     name: "Settings",
     icon: <MdSettings className="w-6 h-6" />,
-    path: "/dashboard/settings",
+    path: "/admin/settings",
   },
   {
     name: "Help",
     icon: <MdHelp className="w-6 h-6" />,
-    path: "/dashboard/help",
+    path: "/admin/help",
   },
 ];
 
