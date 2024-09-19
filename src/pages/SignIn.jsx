@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { collection, getDocs, doc, getDoc } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import { db } from "../config/Firebase";
 import { useRole } from "../context/RoleContext";
 import Logo from "../assets/logo/logo.png";
@@ -12,41 +12,56 @@ const SignIn = () => {
   const navigate = useNavigate();
 
   const handleSignIn = async () => {
-    const userIdInput = userId;
-    const passwordInput = password;
+    // const userIdInput = userId;
+    // const passwordInput = password;
 
-    const collections = [
-      "admin",
-      "institutes",
-      "parents",
-      "students",
-      "teachers",
-    ];
-    let foundUser = null;
+    const roles = ["admin", "institutes", "parents", "students", "teachers"];
+    let userRole = null;
 
     try {
-      for (const collectionName of collections) {
-        const collectionRef = collection(db, collectionName);
-        const snapshot = await getDocs(collectionRef);
+      for (const role of roles) {
+        const userCollectionRef = collection(db, role);
+        const snapshot = await getDocs(userCollectionRef);
 
         snapshot.docs.forEach((doc) => {
           const userData = doc.data();
 
-          if (
-            userData.userId === userIdInput &&
-            userData.password === passwordInput
-          )
-            foundUser = { ...userData, role: collectionName };
+          if (userData.userId === userId && userData.password === password)
+            userRole = role;
         });
 
-        if (foundUser) break;
+        if (userRole) {
+          setRole(userRole);
+          break;
+        }
       }
 
-      foundUser
-        ? console.log("User found: ", foundUser)
-        : console.log("No matching user found");
-    } catch (e) {
-      console.error("Error getting documents: ", e);
+      if (userRole) {
+        switch (userRole) {
+          case "admin":
+            navigate("/admin/home");
+            break;
+          case "institutes":
+            navigate("/institutes/home");
+            break;
+          case "teachers":
+            navigate("/teachers/home");
+            break;
+          case "students":
+            navigate("/students/home");
+            break;
+          case "parents":
+            navigate("/parents/home");
+            break;
+          default:
+            navigate("/sign-in");
+        }
+      } else {
+        alert("No role found for this user or invalid credentials");
+      }
+    } catch (error) {
+      console.error("Error during sign-in:", error);
+      alert("An error occurred. Please try again.");
     }
   };
 
