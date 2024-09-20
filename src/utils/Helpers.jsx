@@ -3,80 +3,49 @@ import { MdSettings, MdAnalytics, MdHelp, MdPayments } from "react-icons/md";
 import { BiSolidReport } from "react-icons/bi";
 import { TbGraphFilled } from "react-icons/tb";
 
-export const MENU_LIST = {
-  admin: [
-    {
-      name: "Home",
-      icon: <FaHome className="w-6 h-6" />,
-      path: "/admin/home",
-    },
-    {
-      name: "Institutes",
-      icon: <FaUniversity className="w-6 h-6" />,
-      path: "/admin/institutes",
-    },
-    {
-      name: "Analytics",
-      icon: <MdAnalytics className="w-6 h-6" />,
-      submenu: [
-        {
-          name: "Reports",
-          path: "/admin/reports",
-          icon: <BiSolidReport className="w-6 h-6 ml-8" />,
-        },
-        {
-          name: "Payments",
-          path: "/admin/payments",
-          icon: <MdPayments className="w-6 h-6 ml-8" />,
-        },
-        {
-          name: "Activities",
-          path: "/admin/activities",
-          icon: <TbGraphFilled className="w-6 h-6 ml-8" />,
-        },
-      ],
-    },
-    {
-      name: "Settings",
-      icon: <MdSettings className="w-6 h-6" />,
-      path: "/admin/settings",
-    },
-    {
-      name: "Help",
-      icon: <MdHelp className="w-6 h-6" />,
-      path: "/admin/help",
-    },
-  ],
-  institutes: [
-    {
-      name: "Home",
-      icon: <FaHome className="w-6 h-6" />,
-      path: "/institutes/home",
-    },
-  ],
-  teachers: [
-    {
-      name: "Home",
-      icon: <FaHome className="w-6 h-6" />,
-      path: "/teachers/home",
-    },
-  ],
-  students: [
-    {
-      name: "Home",
-      icon: <FaHome className="w-6 h-6" />,
-      path: "/students/home",
-    },
-  ],
-  parents: [
-    {
-      name: "Home",
-      icon: <FaHome className="w-6 h-6" />,
-      path: "/parents/home",
-    },
-  ],
-};
-
+export const MENU_LIST = [
+  {
+    name: "Home",
+    icon: <FaHome className="w-6 h-6" />,
+    path: "/admin/home",
+  },
+  {
+    name: "Institutes",
+    icon: <FaUniversity className="w-6 h-6" />,
+    path: "/admin/institutes",
+  },
+  {
+    name: "Analytics",
+    icon: <MdAnalytics className="w-6 h-6" />,
+    submenu: [
+      {
+        name: "Reports",
+        path: "/admin/reports",
+        icon: <BiSolidReport className="w-6 h-6 ml-8" />,
+      },
+      {
+        name: "Payments",
+        path: "/admin/payments",
+        icon: <MdPayments className="w-6 h-6 ml-8" />,
+      },
+      {
+        name: "Activities",
+        path: "/admin/activities",
+        icon: <TbGraphFilled className="w-6 h-6 ml-8" />,
+      },
+    ],
+  },
+  {
+    name: "Settings",
+    icon: <MdSettings className="w-6 h-6" />,
+    path: "/admin/settings",
+  },
+  {
+    name: "Help",
+    icon: <MdHelp className="w-6 h-6" />,
+    path: "/admin/help",
+  },
+];
 
 export const INSTI_LIST = [
   {
