@@ -57,7 +57,7 @@ const SignIn = () => {
             navigate("/sign-in");
         }
       } else {
-        alert("No role found for this user or invalid credentials");
+        alert("Invalid user ID or password. Please try again.");
       }
     } catch (error) {
       console.error("Error during sign-in:", error);
