@@ -1,14 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { EllipsisVerticalIcon } from "@heroicons/react/24/solid";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { MENU_LIST } from "../../utils/Helpers";
+import { useRole } from "../../context/RoleContext";
 import Image1 from "../../assets/images/img1.jpg";
 import Logo from "../../assets/logo/logo.png";
 
 const SideBar = () => {
   const location = useLocation();
   const [AnalyticsMenu, setAnalyticsMenu] = useState(false);
+  const { role } = useRole();
+
+  // Filter menu based on role
+  const filteredMenu = MENU_LIST[role] || [];
+
+  useEffect(() => {
+    console.log("Current Role:", role);
+  }, [role]);
 
   return (
     <div className="fixed w-72 h-screen bg-slate-100 border-r md:flex flex-col justify-between gap-2 p-4 hidden">
@@ -19,7 +28,7 @@ const SideBar = () => {
           className="h-6 w-auto mb-6 mt-4"
         />
         <div className="border-t-2 pt-6 flex flex-col gap-2">
-          {MENU_LIST.map((item, index) => (
+          {filteredMenu.map((item, index) => (
             <div key={index}>
               <Link
                 to={item.path || "#"}

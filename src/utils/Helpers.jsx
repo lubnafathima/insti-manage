@@ -3,49 +3,184 @@ import { MdSettings, MdAnalytics, MdHelp, MdPayments } from "react-icons/md";
 import { BiSolidReport } from "react-icons/bi";
 import { TbGraphFilled } from "react-icons/tb";
 
-export const MENU_LIST = [
-  {
-    name: "Home",
-    icon: <FaHome className="w-6 h-6" />,
-    path: "/admin/home",
-  },
-  {
-    name: "Institutes",
-    icon: <FaUniversity className="w-6 h-6" />,
-    path: "/admin/institutes",
-  },
-  {
-    name: "Analytics",
-    icon: <MdAnalytics className="w-6 h-6" />,
-    submenu: [
-      {
-        name: "Reports",
-        path: "/admin/reports",
-        icon: <BiSolidReport className="w-6 h-6 ml-8" />,
-      },
-      {
-        name: "Payments",
-        path: "/admin/payments",
-        icon: <MdPayments className="w-6 h-6 ml-8" />,
-      },
-      {
-        name: "Activities",
-        path: "/admin/activities",
-        icon: <TbGraphFilled className="w-6 h-6 ml-8" />,
-      },
-    ],
-  },
-  {
-    name: "Settings",
-    icon: <MdSettings className="w-6 h-6" />,
-    path: "/admin/settings",
-  },
-  {
-    name: "Help",
-    icon: <MdHelp className="w-6 h-6" />,
-    path: "/admin/help",
-  },
-];
+export const MENU_LIST = {
+  admin: [
+    {
+      name: "Home",
+      icon: <FaHome className="w-6 h-6" />,
+      path: "/admin/home",
+    },
+    {
+      name: "Institutes",
+      icon: <FaUniversity className="w-6 h-6" />,
+      path: "/admin/institutes",
+    },
+    {
+      name: "Analytics",
+      icon: <MdAnalytics className="w-6 h-6" />,
+      submenu: [
+        {
+          name: "Reports",
+          path: "/admin/reports",
+          icon: <BiSolidReport className="w-6 h-6 ml-8" />,
+        },
+        {
+          name: "Payments",
+          path: "/admin/payments",
+          icon: <MdPayments className="w-6 h-6 ml-8" />,
+        },
+        {
+          name: "Activities",
+          path: "/admin/activities",
+          icon: <TbGraphFilled className="w-6 h-6 ml-8" />,
+        },
+      ],
+    },
+    {
+      name: "Settings",
+      icon: <MdSettings className="w-6 h-6" />,
+      path: "/admin/settings",
+    },
+    {
+      name: "Help",
+      icon: <MdHelp className="w-6 h-6" />,
+      path: "/admin/help",
+    },
+  ],
+
+  institutes: [
+    {
+      name: "Home",
+      icon: <FaHome className="w-6 h-6" />,
+      path: "/institutes/home",
+    },
+    {
+      name: "Classes",
+      icon: <FaUniversity className="w-6 h-6" />,
+      path: "/institutes/classes",
+    },
+    {
+      name: "Teachers",
+      icon: <MdAnalytics className="w-6 h-6" />,
+      path: "/institutes/teachers",
+    },
+    {
+      name: "Students",
+      icon: <MdAnalytics className="w-6 h-6" />,
+      path: "/institutes/students",
+    },
+    {
+      name: "Notices",
+      icon: <MdSettings className="w-6 h-6" />,
+      path: "/institutes/notices",
+    },
+    {
+      name: "Settings",
+      icon: <MdSettings className="w-6 h-6" />,
+      path: "/institutes/settings",
+    },
+  ],
+
+  teachers: [
+    {
+      name: "Home",
+      icon: <FaHome className="w-6 h-6" />,
+      path: "/teachers/home",
+    },
+    {
+      name: "Classes",
+      icon: <FaUniversity className="w-6 h-6" />,
+      path: "/teachers/classes",
+    },
+    {
+      name: "Attendance",
+      icon: <BiSolidReport className="w-6 h-6" />,
+      path: "/teachers/attendance",
+    },
+    {
+      name: "Marks",
+      icon: <MdPayments className="w-6 h-6" />,
+      path: "/teachers/marks",
+    },
+    {
+      name: "Notices",
+      icon: <MdSettings className="w-6 h-6" />,
+      path: "/teachers/notices",
+    },
+    {
+      name: "Settings",
+      icon: <MdSettings className="w-6 h-6" />,
+      path: "/teachers/settings",
+    },
+  ],
+
+  students: [
+    {
+      name: "Home",
+      icon: <FaHome className="w-6 h-6" />,
+      path: "/students/home",
+    },
+    {
+      name: "Classes",
+      icon: <FaUniversity className="w-6 h-6" />,
+      path: "/students/classes",
+    },
+    {
+      name: "Attendance",
+      icon: <BiSolidReport className="w-6 h-6" />,
+      path: "/students/attendance",
+    },
+    {
+      name: "Marks",
+      icon: <MdPayments className="w-6 h-6" />,
+      path: "/students/marks",
+    },
+    {
+      name: "Notices",
+      icon: <MdSettings className="w-6 h-6" />,
+      path: "/students/notices",
+    },
+    {
+      name: "Settings",
+      icon: <MdSettings className="w-6 h-6" />,
+      path: "/students/settings",
+    },
+  ],
+
+  parents: [
+    {
+      name: "Home",
+      icon: <FaHome className="w-6 h-6" />,
+      path: "/parents/home",
+    },
+    {
+      name: "Student Info",
+      icon: <FaUniversity className="w-6 h-6" />,
+      path: "/parents/student-info",
+    },
+    {
+      name: "Attendance",
+      icon: <BiSolidReport className="w-6 h-6" />,
+      path: "/parents/attendance",
+    },
+    {
+      name: "Marks",
+      icon: <MdPayments className="w-6 h-6" />,
+      path: "/parents/marks",
+    },
+    {
+      name: "Notices",
+      icon: <MdSettings className="w-6 h-6" />,
+      path: "/parents/notices",
+    },
+    {
+      name: "Settings",
+      icon: <MdSettings className="w-6 h-6" />,
+      path: "/parents/settings",
+    },
+  ],
+};
+
 
 export const INSTI_LIST = [
   {

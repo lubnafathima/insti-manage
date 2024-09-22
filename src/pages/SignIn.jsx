@@ -12,8 +12,6 @@ const SignIn = () => {
   const navigate = useNavigate();
 
   const handleSignIn = async () => {
-    // const userIdInput = userId;
-    // const passwordInput = password;
 
     const roles = ["admin", "institutes", "parents", "students", "teachers"];
     let userRole = null;
