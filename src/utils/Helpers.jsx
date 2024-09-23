@@ -25,16 +25,16 @@ export const MENU_LIST = {
           icon: <BiSolidReport className="w-6 h-6 ml-8" />,
         },
         {
+          name: "Payments",
+          path: "/admin/payments",
+          icon: <MdPayments className="w-6 h-6 ml-8" />,
+        },
+        {
           name: "Activities",
           path: "/admin/activities",
           icon: <TbGraphFilled className="w-6 h-6 ml-8" />,
         },
       ],
-    },
-    {
-      name: "Payments",
-      path: "/admin/payments",
-      icon: <MdPayments className="w-6 h-6" />,
     },
     {
       name: "Settings",

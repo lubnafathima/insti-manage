@@ -12,7 +12,6 @@ const SideBar = () => {
   const [AnalyticsMenu, setAnalyticsMenu] = useState(false);
   const { role } = useRole();
 
-  // Filter menu based on role
   const filteredMenu = MENU_LIST[role] || [];
 
   useEffect(() => {
