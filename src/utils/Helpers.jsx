@@ -55,29 +55,54 @@ export const MENU_LIST = {
       path: "/institutes/home",
     },
     {
-      name: "Classes",
+      name: "Teacher",
       icon: <FaUniversity className="w-6 h-6" />,
-      path: "/institutes/classes",
+      path: "/institutes/teacher",
     },
     {
-      name: "Teachers",
+      name: "Student",
       icon: <MdAnalytics className="w-6 h-6" />,
-      path: "/institutes/teachers",
+      path: "/institutes/student",
     },
     {
-      name: "Students",
+      name: "Class",
       icon: <MdAnalytics className="w-6 h-6" />,
-      path: "/institutes/students",
+      path: "/institutes/class",
     },
     {
-      name: "Notices",
+      name: "Parent",
       icon: <MdSettings className="w-6 h-6" />,
-      path: "/institutes/notices",
+      path: "/institutes/parent",
+    },
+    {
+      name: "Support",
+      icon: <MdSettings className="w-6 h-6" />,
+      path: "/institutes/support",
+    },
+    {
+      name: "Subscription",
+      icon: <FaUniversity className="w-6 h-6" />,
+      path: "/institutes/subscription",
+    },
+    {
+      name: "Analytics",
+      icon: <MdAnalytics className="w-6 h-6" />,
+      path: "/institutes/analytics",
+    },
+    {
+      name: "Notification",
+      icon: <MdAnalytics className="w-6 h-6" />,
+      path: "/institutes/notification",
     },
     {
       name: "Settings",
       icon: <MdSettings className="w-6 h-6" />,
       path: "/institutes/settings",
+    },
+    {
+      name: "Help",
+      icon: <MdSettings className="w-6 h-6" />,
+      path: "/institutes/help",
     },
   ],
 
