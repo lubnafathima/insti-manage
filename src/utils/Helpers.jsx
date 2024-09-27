@@ -118,19 +118,29 @@ export const MENU_LIST = {
       path: "/teachers/classes",
     },
     {
-      name: "Attendance",
+      name: "Schedule",
       icon: <BiSolidReport className="w-6 h-6" />,
-      path: "/teachers/attendance",
+      path: "/teachers/schedule",
     },
     {
-      name: "Marks",
+      name: "Subject",
       icon: <MdPayments className="w-6 h-6" />,
-      path: "/teachers/marks",
+      path: "/teachers/subject",
     },
     {
-      name: "Notices",
+      name: "Reports",
       icon: <MdSettings className="w-6 h-6" />,
-      path: "/teachers/notices",
+      path: "/teachers/reports",
+    },
+    {
+      name: "Communication",
+      icon: <MdSettings className="w-6 h-6" />,
+      path: "/teachers/communication",
+    },
+    {
+      name: "Assignments",
+      icon: <MdSettings className="w-6 h-6" />,
+      path: "/teachers/assignments",
     },
     {
       name: "Settings",
