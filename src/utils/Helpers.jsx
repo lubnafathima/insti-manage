@@ -161,9 +161,9 @@ export const MENU_LIST = {
       path: "/students/classes",
     },
     {
-      name: "Attendance",
+      name: "Assignments",
       icon: <BiSolidReport className="w-6 h-6" />,
-      path: "/students/attendance",
+      path: "/students/assignments",
     },
     {
       name: "Marks",
