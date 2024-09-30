@@ -166,9 +166,9 @@ export const MENU_LIST = {
       path: "/students/assignments",
     },
     {
-      name: "Marks",
+      name: "grades",
       icon: <MdPayments className="w-6 h-6" />,
-      path: "/students/marks",
+      path: "/students/grades",
     },
     {
       name: "Notices",
@@ -199,7 +199,7 @@ export const MENU_LIST = {
       path: "/parents/attendance",
     },
     {
-      name: "Marks",
+      name: "grades",
       icon: <MdPayments className="w-6 h-6" />,
       path: "/parents/marks",
     },
