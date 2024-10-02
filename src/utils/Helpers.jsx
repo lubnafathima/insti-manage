@@ -176,9 +176,9 @@ export const MENU_LIST = {
       path: "/students/attendance",
     },
     {
-      name: "Settings",
+      name: "Reports",
       icon: <MdSettings className="w-6 h-6" />,
-      path: "/students/settings",
+      path: "/students/reports",
     },
   ],
 
