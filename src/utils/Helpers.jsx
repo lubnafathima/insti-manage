@@ -180,6 +180,11 @@ export const MENU_LIST = {
       icon: <MdSettings className="w-6 h-6" />,
       path: "/students/reports",
     },
+    {
+      name: "Communication",
+      icon: <MdSettings className="w-6 h-6" />,
+      path: "/students/communication",
+    },
   ],
 
   parents: [
