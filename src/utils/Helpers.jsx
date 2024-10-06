@@ -209,9 +209,9 @@ export const MENU_LIST = {
       path: "/parents/home",
     },
     {
-      name: "Student Info",
+      name: "Student Performance",
       icon: <FaUniversity className="w-6 h-6" />,
-      path: "/parents/student-info",
+      path: "/parents/student-performance",
     },
     {
       name: "Attendance",
