@@ -1,5 +1,13 @@
 const widgeData = [
   {
+    id: 0,
+    title: "Total Institutions",
+    data: "50",
+    content: "Total Institutions subscribed to the platform.",
+    link_text: "View More",
+    link_url: "",
+  },
+  {
     id: 1,
     title: "Active Institutions",
     data: "15",
@@ -12,14 +20,6 @@ const widgeData = [
     title: "New Institutions",
     data: "2",
     content: "New Institutions added in the last 30 days.",
-    link_text: "View More",
-    link_url: "",
-  },
-  {
-    id: 3,
-    title: "Server Status",
-    data: "Online",
-    content: "Current status of the server.",
     link_text: "View More",
     link_url: "",
   },

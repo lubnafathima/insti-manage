@@ -1,17 +1,38 @@
 const recentData = [
   {
     id: 0,
-    activity: "New Institution Registered",
-    institution: "ABC School",
+    activity: "New Institution Added",
+    institution: "XYZ School",
     date: "2024-08-20",
-    status: "Pending",
+    status: "Suceess",
   },
   {
     id: 1,
-    activity: "Payment Received",
-    institution: "XYZ College",
+    activity: "Payment Processed",
+    institution: "ABC College",
     date: "2024-08-18",
-    status: "Completed",
+    status: "Suceess",
+  },
+  {
+    id: 2,
+    activity: "Plan Upgrade",
+    institution: "DEF College",
+    date: "2024-08-17",
+    status: "Suceess",
+  },
+  {
+    id: 3,
+    activity: "Support Ticket Raised",
+    institution: "GHI College",
+    date: "2024-08-16",
+    status: "Pending",
+  },
+  {
+    id: 4,
+    activity: "Payment Failed",
+    institution: "JKL College",
+    date: "2024-08-15",
+    status: "Failed",
   },
 ];
 
