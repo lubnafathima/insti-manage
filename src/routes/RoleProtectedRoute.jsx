@@ -4,7 +4,7 @@ import { useRole } from "../context/RoleContext";
 export const RoleProtectedRoute = ({ roleRequired, children }) => {
   const { role } = useRole();
 
-  if (role !== roleRequired) {
+  if (!role && role !== roleRequired) {
     return <Navigate to="/sign-in" replace />;
   }
 

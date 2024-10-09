@@ -30,15 +30,15 @@ function App() {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
         {/* ADMIN */}
-        <Route path="/admin" element={<Layout />}>
-          <Route
-            index
-            element={
-              <RoleProtectedRoute roleRequired="admin">
-                <AdminHome />
-              </RoleProtectedRoute>
-            }
-          />
+        <Route
+          path="/admin"
+          element={
+            <RoleProtectedRoute roleRequired="admin">
+              <Layout />
+            </RoleProtectedRoute>
+          }
+        >
+          <Route index element={<AdminHome />} />
           <Route path="home" element={<AdminHome />} />
           <Route path="institutes" element={<Institutes />} />
           <Route path="settings" element={<Settings />} />
@@ -48,51 +48,51 @@ function App() {
           <Route path="activities" element={<Activities />} />
         </Route>
         {/* INSTITUTES */}
-        <Route path="/institutes" element={<Layout />}>
-          <Route
-            index
-            element={
-              <RoleProtectedRoute roleRequired="institutes">
-                <InstitutesHome />
-              </RoleProtectedRoute>
-            }
-          />
+        <Route
+          path="/institutes"
+          element={
+            <RoleProtectedRoute roleRequired="institutes">
+              <Layout />
+            </RoleProtectedRoute>
+          }
+        >
+          <Route index element={<InstitutesHome />} />
           <Route path="home" element={<InstitutesHome />} />
         </Route>
         {/* TEACHERS */}
-        <Route path="/teachers" element={<Layout />}>
-          <Route
-            index
-            element={
-              <RoleProtectedRoute roleRequired="teachers">
-                <TeachersHome />
-              </RoleProtectedRoute>
-            }
-          />
+        <Route
+          path="/teachers"
+          element={
+            <RoleProtectedRoute roleRequired="teachers">
+              <Layout />
+            </RoleProtectedRoute>
+          }
+        >
+          <Route index element={<TeachersHome />} />
           <Route path="home" element={<TeachersHome />} />
         </Route>
         {/* STUDENTS */}
-        <Route path="/students" element={<Layout />}>
-          <Route
-            index
-            element={
-              <RoleProtectedRoute roleRequired="students">
-                <StudentsHome />
-              </RoleProtectedRoute>
-            }
-          />
+        <Route
+          path="/students"
+          element={
+            <RoleProtectedRoute roleRequired="students">
+              <Layout />
+            </RoleProtectedRoute>
+          }
+        >
+          <Route index element={<StudentsHome />} />
           <Route path="home" element={<StudentsHome />} />
         </Route>
         {/* PARENTS */}
-        <Route path="/parents" element={<Layout />}>
-          <Route
-            index
-            element={
-              <RoleProtectedRoute roleRequired="parents">
-                <ParentsHome />
-              </RoleProtectedRoute>
-            }
-          />
+        <Route
+          path="/parents"
+          element={
+            <RoleProtectedRoute roleRequired="parents">
+              <Layout />
+            </RoleProtectedRoute>
+          }
+        >
+          <Route index element={<ParentsHome />} />
           <Route path="home" element={<ParentsHome />} />
         </Route>
       </Routes>
