@@ -219,9 +219,9 @@ export const MENU_LIST = {
       path: "/parents/attendance",
     },
     {
-      name: "grades",
+      name: "Assignments & Exams",
       icon: <MdPayments className="w-6 h-6" />,
-      path: "/parents/marks",
+      path: "/parents/assignments-&-Exams",
     },
     {
       name: "Notices",

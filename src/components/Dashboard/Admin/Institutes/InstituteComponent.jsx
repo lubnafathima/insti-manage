@@ -44,9 +44,10 @@ const InstituteComponent = () => {
       <InstituteHeader />
       <input
         type="text"
-        placeholder="Search"
-        className="w-full px-4 py-2 border rounded-md"
+        placeholder="Search by Institute name / Institute ID / City / Email Address"
+        className="w-full px-6 py-4 border rounded-md"
       />
+      
       <InstituteList institutes={currItems} />
       <Pagination
         currPage={currPage}

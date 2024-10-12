@@ -20,6 +20,10 @@ const InstituteHeader = () => {
           Add Institute
         </button>
       </div>
+      <hr className="my-4" />
+      <div>
+        
+      </div>
       <Modal
         showModal={showModal}
         onClose={() => setShowModal(false)}

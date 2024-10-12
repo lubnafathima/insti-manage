@@ -1,11 +1,12 @@
-const widgeData = [
+import { Link } from "react-router-dom";
+const overviewData = [
   {
     id: 0,
     title: "Total Institutions",
     data: "50",
     content: "Total Institutions subscribed to the platform.",
     link_text: "View More",
-    link_url: "",
+    link_url: "/admin/institutes",
   },
   {
     id: 1,
@@ -49,13 +50,14 @@ const widgeData = [
   // },
 ];
 
-const Widges = () => {
+const Overview = () => {
   return (
     <>
       <h2 className="text-xl font-semibold my-4">Overview</h2>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-        {widgeData.map((data) => (
-          <div
+        {overviewData.map((data) => (
+          <Link
+            to={data.link_url}
             key={data.id}
             className="w-full min-h-40 bg-white border rounded-md shadow-sm flex flex-col justify-between p-4"
           >
@@ -66,11 +68,11 @@ const Widges = () => {
               <h2 className="text-3xl font-bold mt-2">{data.data}</h2>
             </div>
             <p className="text-xs text-gray-500 77mt-2">{data.content}</p>
-          </div>
+          </Link>
         ))}
       </div>
     </>
   );
 };
 
-export default Widges;
+export default Overview;

@@ -7,13 +7,13 @@ const LinksData = [
     id: 1,
     icon: <FaUniversity />,
     link_text: "Add New Institution",
-    link_url: "/admin/institutes",
+    link_url: "",
   },
   {
     id: 2,
     icon: <FaEye />,
     link_text: "View All Institutions",
-    link_url: "",
+    link_url: "/admin/institutes",
   },
   {
     id: 3,

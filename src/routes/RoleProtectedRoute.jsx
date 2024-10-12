@@ -31,3 +31,4 @@ export const RoleProtectedRoute = ({ roleRequired, children }) => {
 
   return children;
 };
+
