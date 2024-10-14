@@ -224,14 +224,9 @@ export const MENU_LIST = {
       path: "/parents/assignments-&-Exams",
     },
     {
-      name: "Notices",
+      name: "Communication",
       icon: <MdSettings className="w-6 h-6" />,
-      path: "/parents/notices",
-    },
-    {
-      name: "Settings",
-      icon: <MdSettings className="w-6 h-6" />,
-      path: "/parents/settings",
+      path: "/parents/communication",
     },
   ],
 };
