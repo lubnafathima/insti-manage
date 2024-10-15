@@ -21,9 +21,9 @@ export const RoleProtectedRoute = ({ roleRequired, children }) => {
 
   // For testing purposes, set role to 'admin' by default
   if (!role) {
-    setRole("admin");  // Setting default role to admin for testing
+    setRole("institutes");  // Setting default role to admin for testing
   }
-
+ 
   // Allow access without redirecting to sign-in during testing
   if (role && role !== roleRequired) {
     return <Navigate to="/sign-in" replace />;

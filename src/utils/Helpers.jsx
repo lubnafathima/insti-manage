@@ -1,7 +1,12 @@
-import { FaHome, FaUniversity } from "react-icons/fa";
-import { MdSettings, MdAnalytics, MdHelp, MdPayments } from "react-icons/md";
+import { FaHome, FaUniversity, FaChalkboardTeacher } from "react-icons/fa";
+import { MdSettings, MdAnalytics, MdHelp, MdPayments, MdSubscriptions } from "react-icons/md";
 import { BiSolidReport } from "react-icons/bi";
+import { PiStudentFill } from "react-icons/pi";
 import { TbGraphFilled } from "react-icons/tb";
+import { SiGoogleclassroom } from "react-icons/si";
+import { RiParentFill } from "react-icons/ri";
+import { IoTicket } from "react-icons/io5";
+import { IoMdNotifications } from "react-icons/io";
 
 export const MENU_LIST = {
   admin: [
@@ -56,42 +61,42 @@ export const MENU_LIST = {
     },
     {
       name: "Teacher",
-      icon: <FaUniversity className="w-6 h-6" />,
+      icon: <FaChalkboardTeacher className="w-6 h-6" />,
       path: "/institutes/teacher",
     },
     {
       name: "Student",
-      icon: <MdAnalytics className="w-6 h-6" />,
+      icon: <PiStudentFill className="w-6 h-6" />,
       path: "/institutes/student",
     },
     {
       name: "Class",
-      icon: <MdAnalytics className="w-6 h-6" />,
+      icon: <SiGoogleclassroom className="w-6 h-6" />,
       path: "/institutes/class",
     },
     {
       name: "Parent",
-      icon: <MdSettings className="w-6 h-6" />,
+      icon: <RiParentFill className="w-6 h-6" />,
       path: "/institutes/parent",
     },
     {
       name: "Support",
-      icon: <MdSettings className="w-6 h-6" />,
+      icon: <IoTicket className="w-6 h-6" />,
       path: "/institutes/support",
     },
     {
       name: "Subscription",
-      icon: <FaUniversity className="w-6 h-6" />,
+      icon: <MdSubscriptions className="w-6 h-6" />,
       path: "/institutes/subscription",
     },
     {
-      name: "Analytics",
+      name: "Reports",
       icon: <MdAnalytics className="w-6 h-6" />,
-      path: "/institutes/analytics",
+      path: "/institutes/reports",
     },
     {
       name: "Notification",
-      icon: <MdAnalytics className="w-6 h-6" />,
+      icon: <IoMdNotifications className="w-6 h-6" />,
       path: "/institutes/notification",
     },
     {
@@ -101,7 +106,7 @@ export const MENU_LIST = {
     },
     {
       name: "Help",
-      icon: <MdSettings className="w-6 h-6" />,
+      icon: <MdHelp className="w-6 h-6" />,
       path: "/institutes/help",
     },
   ],
@@ -230,7 +235,6 @@ export const MENU_LIST = {
     },
   ],
 };
-
 
 export const INSTI_LIST = [
   {

@@ -15,6 +15,16 @@ import Payments from "./pages/Dashboard/Admin/Analytics/Payments";
 import Activities from "./pages/Dashboard/Admin/Analytics/Activities";
 // INSTITUTES
 import InstitutesHome from "./pages/Dashboard/Institutes/Home";
+import InstitutesTeacher from "./pages/Dashboard/Institutes/Teacher";
+import InstitutesStudent from "./pages/Dashboard/Institutes/Student";
+import InstitutesClass from "./pages/Dashboard/Institutes/Class";
+import InstitutesParent from "./pages/Dashboard/Institutes/Parent";
+import InstitutesSupport from "./pages/Dashboard/Institutes/Support";
+import InstitutesSubscription from "./pages/Dashboard/Institutes/Subscription";
+import InstitutesReports from "./pages/Dashboard/Institutes/Reports";
+import InstitutesNotification from "./pages/Dashboard/Institutes/Notification";
+import InstitutesSettings from "./pages/Dashboard/Institutes/Settings";
+import InstitutesHelp from "./pages/Dashboard/Institutes/Help";
 // TEACHERS
 import TeachersHome from "./pages/Dashboard/Teachers/Home";
 // STUDENTS
@@ -58,6 +68,16 @@ function App() {
         >
           <Route index element={<InstitutesHome />} />
           <Route path="home" element={<InstitutesHome />} />
+          <Route path="teacher" element={<InstitutesTeacher />} />
+          <Route path="student" element={<InstitutesStudent />} />
+          <Route path="class" element={<InstitutesClass />} />
+          <Route path="parent" element={<InstitutesParent />} />
+          <Route path="support" element={<InstitutesSupport />} />
+          <Route path="subscription" element={<InstitutesSubscription />} />
+          <Route path="reports" element={<InstitutesReports />} />
+          <Route path="notification" element={<InstitutesNotification />} />
+          <Route path="settings" element={<InstitutesSettings />} />
+          <Route path="help" element={<InstitutesHelp />} />
         </Route>
         {/* TEACHERS */}
         <Route
