@@ -9,7 +9,7 @@ const tableData = [
   ["Updated Class 10B timetable", "Jane Doe", "20-Sep-2024", "Completed"],
   ["Updated Class 1B timetable", "Jane", "20-Sep-2024", "Completed"],
   ["Updated Class 0B timetable", "Doe", "20-Sep-2024", "Completed"],
-]
+];
 
 const RecentActivities = () => {
   return (
