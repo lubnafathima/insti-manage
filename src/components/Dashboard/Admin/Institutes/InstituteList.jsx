@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Modal from "../../Modal";
+import Modal from "../../../../styledComponents/Modal";
 import EditInstitute from "./Modals/EditInstitute";
 import { MdEdit, MdDelete } from "react-icons/md";
 
