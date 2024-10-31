@@ -2,16 +2,21 @@ import SubTitleComponent from "../../../../../styledComponents/SubTitleComponent
 import ButtonFilled from "../../../../../styledComponents/ButtonFilled";
 import TableComponent from "../../../../../styledComponents/TableComponent";
 
-const studentHeader = ["Student Name", "Grade", "Section", "Status", "Action"];
+const linkStudentHeader = [
+  "Student Name",
+  "Grade",
+  "Section",
+  "Status",
+  "Action",
+];
 
-const studentData = [
+const linkStudentData = [
   ["Jane Doe", "10th", "A", "Active", "Edit / Delete"],
   ["Luke Smith", "8th", "B", "Inactive", "Edit / Delete"],
 ];
 
-const communicationHeader = ["Date", "Subject", "Teacher", "Notes"];
-
-const communicationData = [
+const commHeader = ["Date", "Subject", "Teacher", "Notes"];
+const commData = [
   [
     "05/09/2024",
     "Homework Query",
@@ -20,7 +25,7 @@ const communicationData = [
   ],
 ];
 
-const AddParent = ({ onCancel }) => {
+const AddClass = ({ onCancel }) => {
   // const handleSubmit = (event) => {
   //   event.preventDefault();
   // };
@@ -29,14 +34,14 @@ const AddParent = ({ onCancel }) => {
     <form className="space-y-4">
       <div className="max-h-96 overflow-y-auto scrollbar-custom p-4">
         <div className="">
-          <label className="block text-sm font-medium mb-1" htmlFor="name">
+          <label className="block text-sm font-medium mb-1" htmlFor="fullName">
             Full Name
           </label>
           <input
             type="text"
-            id="name"
+            id="fullName"
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
-            placeholder="10"
+            placeholder="Ms. Alice Smith"
           />
         </div>
         <div className="mt-4">
@@ -51,35 +56,37 @@ const AddParent = ({ onCancel }) => {
           />
         </div>
         <div className="mt-4">
-          <label className="block text-sm font-medium mb-1" htmlFor="number">
+          <label className="block text-sm font-medium mb-1" htmlFor="phone">
             Phone Number
           </label>
           <input
             type="text"
-            id="number"
+            id="phone"
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
             placeholder="123-456-7890"
           />
         </div>
         <div className="mt-4">
           <div className="flex justify-between items-center gap-2">
-            <SubTitleComponent title="Linked Students" />
-            <ButtonFilled text="Add" />
+            <SubTitleComponent title="Link Student" />
+            <div className="flex gap-2">
+              <ButtonFilled text="Add" />
+              <ButtonFilled text="Import (excel/csv)" />
+            </div>
           </div>
           <TableComponent
-            studentHeader={studentHeader}
-            studentData={studentData}
+            tableHeader={linkStudentHeader}
+            tableData={linkStudentData}
           />
         </div>
         <div className="mt-4">
           <div className="flex justify-between items-center gap-2">
             <SubTitleComponent title="Parent-Teacher Communication" />
-            <ButtonFilled text="Add" />
+            <div className="">
+              <ButtonFilled text="Add" />
+            </div>
           </div>
-          <TableComponent
-            communicationHeader={communicationHeader}
-            communicationData={communicationData}
-          />
+          <TableComponent tableHeader={commHeader} tableData={commData} />
         </div>
       </div>
       <div className="flex justify-end space-x-2">
@@ -101,4 +108,4 @@ const AddParent = ({ onCancel }) => {
   );
 };
 
-export default AddParent;
+export default AddClass;
