@@ -9,121 +9,56 @@ const AddSupport = ({ onCancel }) => {
     <form className="space-y-4">
       <div className="max-h-96 overflow-y-auto scrollbar-custom p-4">
         <div className="">
-          <label className="block text-sm font-medium mb-1" htmlFor="name">
-            Full Name
+          <label className="block text-sm font-medium mb-1" htmlFor="subject">
+            Subject
           </label>
           <input
             type="text"
-            id="name"
+            id="subject"
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
-            placeholder="Ms. Alice Smith"
+            placeholder="e.g., 'Server Down'"
           />
         </div>
         <div className="mt-4">
-          <label className="block text-sm font-medium mb-1" htmlFor="email">
-            Email ID
+          <label className="block text-sm font-medium mb-1" htmlFor="priority">
+            Priority
           </label>
           <input
             type="email"
-            id="email"
+            id="priority"
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
-            placeholder="alice.smith@school.com"
+            placeholder="Dropdown (High, Medium, Low)"
           />
         </div>
         <div className="mt-4">
-          <label className="block text-sm font-medium mb-1" htmlFor="phone">
-            Phone Number
+          <label className="block text-sm font-medium mb-1" htmlFor="category">
+            Category
           </label>
           <input
             type="number"
-            id="phone"
+            id="category"
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
-            placeholder="+1 234 567 890"
+            placeholder="Dropdown (e.g., Technical, Account, Billing, Other)"
           />
         </div>
         <div className="mt-4">
           <label
             className="block text-sm font-medium mb-1"
-            htmlFor="department"
+            htmlFor="description"
           >
-            Department
+            Description
           </label>
           <input
             type="text"
-            id="department"
+            id="description"
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
-            placeholder="Science"
+            placeholder="Type something..."
           />
         </div>
         {/* Role Assignment Starts */}
         <div className="border-t my-8"></div>
-        <SubTitleComponent title="Role Assignment" />
-        <div className="mt-4 flex gap-2 items-center justify-start w-full">
-          <label
-            className="w-1/2 block text-sm font-medium mb-1"
-            htmlFor="class_teacher"
-          >
-            Class Teacher
-          </label>
-          <input
-            type="text"
-            id="class_teacher"
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
-            placeholder="10A (select one class)"
-          />
-        </div>
-        <div className="mt-4 flex gap-2 items-center justify-start w-full">
-          <label
-            className="w-1/2 block text-sm font-medium mb-1"
-            htmlFor="subject_teacher"
-          >
-            Subject Teacher
-          </label>
-          <input
-            type="text"
-            id="subject_teacher"
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
-            placeholder="Physics - 9A, 10B (select one/more class)"
-          />
-        </div>
-        <div className="border-t my-8"></div>
-        {/* Role Assignment Ends */}
-        <div className="mt-4">
-          <label className="block text-sm font-medium mb-1" htmlFor="date">
-            Joining Date
-          </label>
-          <input
-            type="text"
-            id="date"
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
-            placeholder="01-Jul-2020"
-          />
-        </div>
-        <div className="mt-4">
-          <label className="block text-sm font-medium mb-1" htmlFor="id">
-            Teacher ID
-          </label>
-          <input
-            type="text"
-            id="id"
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
-            placeholder="Auto-generated or custom input"
-          />
-        </div>
-        <div className="mt-4">
-          <label
-            className="block text-sm font-medium mb-1"
-            htmlFor="qualifications"
-          >
-            Qualifications
-          </label>
-          <input
-            type="text"
-            id="qualifications"
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
-            placeholder="qualifications"
-          />
-        </div>
+        <SubTitleComponent title="Upload Attachment" />
+        <p className="mt-4 border-2 p-4 flex items-center justify-center text-gray-500 cursor-pointer hover:bg-gray-100 rounded">+</p>
       </div>
       <div className="flex justify-end space-x-2">
         <button
