@@ -1,9 +1,6 @@
 import SubTitleComponent from "../../../../../styledComponents/SubTitleComponent";
 
 const AddSupport = ({ onCancel }) => {
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  // };
 
   return (
     <form className="space-y-4">
@@ -55,7 +52,6 @@ const AddSupport = ({ onCancel }) => {
             placeholder="Type something..."
           />
         </div>
-        {/* Role Assignment Starts */}
         <div className="border-t my-8"></div>
         <SubTitleComponent title="Upload Attachment" />
         <p className="mt-4 border-2 p-4 flex items-center justify-center text-gray-500 cursor-pointer hover:bg-gray-100 rounded">+</p>
