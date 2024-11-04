@@ -11,9 +11,6 @@ const tableData = [
 ];
 
 const AddClass = ({ onCancel }) => {
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  // };
 
   return (
     <form className="space-y-4">
