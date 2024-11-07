@@ -4,6 +4,30 @@ import ButtonFilled from "../../../styledComponents/ButtonFilled";
 import TableComponent from "../../../styledComponents/TableComponent";
 import Modal from "../../../styledComponents/Modal";
 import AddClass from "../../../components/Dashboard/Institutes/Class/Modals/AddClass";
+import Cards from "../../../styledComponents/Cards";
+
+const classData = [
+  {
+    id: 0,
+    title: "Total Classes",
+    content: "25",
+  },
+  {
+    id: 1,
+    title: "Active Classes",
+    content: "23",
+  },
+  {
+    id: 2,
+    title: "Classes without Teachers",
+    content: "2",
+  },
+  {
+    id: 3,
+    title: "Total Students",
+    content: "500",
+  },
+];
 
 const tableHeader = [
   "Grade",
@@ -31,6 +55,11 @@ const Class = () => {
 
   return (
     <div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 mb-4 gap-2">
+        {classData.map((data) => (
+          <Cards key={data.id} title={data.title} content={data.content} />
+        ))}
+      </div>
       <InputComponent placeholder="Search by Class Name or Teacher Name" />
       <div className="mt-4 flex flex-wrap gap-2">
         <ButtonFilled text="Add Class" onClick={() => displayModal()} />
