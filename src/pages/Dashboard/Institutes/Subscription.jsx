@@ -1,5 +1,5 @@
 import TitleComponent from "../../../styledComponents/TitleComponent";
-import TableComponent from "../../../styledComponents/TableComponent";
+// import TableComponent from "../../../styledComponents/TableComponent";
 import Cards from "../../../styledComponents/Cards";
 
 const subscriptionData = [
