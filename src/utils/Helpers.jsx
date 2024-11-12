@@ -60,37 +60,37 @@ export const MENU_LIST = {
       path: "/institutes/home",
     },
     {
-      name: "Teacher",
+      name: "Manage Teacher",
       icon: <FaChalkboardTeacher className="w-6 h-6" />,
       path: "/institutes/teacher",
     },
     {
-      name: "Student",
+      name: "Manage Student",
       icon: <PiStudentFill className="w-6 h-6" />,
       path: "/institutes/student",
     },
     {
-      name: "Class",
+      name: "Manage Class",
       icon: <SiGoogleclassroom className="w-6 h-6" />,
       path: "/institutes/class",
     },
     {
-      name: "Parent",
+      name: "Manage Parent",
       icon: <RiParentFill className="w-6 h-6" />,
       path: "/institutes/parent",
     },
     {
-      name: "Support",
+      name: "Support Ticket",
       icon: <IoTicket className="w-6 h-6" />,
       path: "/institutes/support",
     },
     {
-      name: "Subscription",
+      name: "Subscription & Payments",
       icon: <MdSubscriptions className="w-6 h-6" />,
       path: "/institutes/subscription",
     },
     {
-      name: "Reports",
+      name: "Analytics & Reports",
       icon: <MdAnalytics className="w-6 h-6" />,
       path: "/institutes/reports",
     },
@@ -105,7 +105,7 @@ export const MENU_LIST = {
       path: "/institutes/settings",
     },
     {
-      name: "Help",
+      name: "Help & Support",
       icon: <MdHelp className="w-6 h-6" />,
       path: "/institutes/help",
     },
