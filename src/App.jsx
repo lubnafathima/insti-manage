@@ -23,6 +23,7 @@ import InstitutesSupport from "./pages/Dashboard/Institutes/Support";
 import InstitutesSubscription from "./pages/Dashboard/Institutes/Subscription";
 import InstitutesReports from "./pages/Dashboard/Institutes/Reports";
 import InstitutesNotification from "./pages/Dashboard/Institutes/Notification";
+import InstitutesArchiveNotification from "./pages/Dashboard/Institutes/ArchiveNotification";
 import InstitutesSettings from "./pages/Dashboard/Institutes/Settings";
 import InstitutesHelp from "./pages/Dashboard/Institutes/Help";
 // TEACHERS
@@ -76,6 +77,7 @@ function App() {
           <Route path="subscription" element={<InstitutesSubscription />} />
           <Route path="reports" element={<InstitutesReports />} />
           <Route path="notification" element={<InstitutesNotification />} />
+          <Route path="archive" element={<InstitutesArchiveNotification />} />
           <Route path="settings" element={<InstitutesSettings />} />
           <Route path="help" element={<InstitutesHelp />} />
         </Route>
