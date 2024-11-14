@@ -1,37 +1,37 @@
-import TitleComponent from "../../../styledComponents/TitleComponent";
-import InputComponent from "../../../styledComponents/InputComponent";
-import CardLinks from "../../../styledComponents/CardLinks";
+import TitleComponent from "../../../../styledComponents/TitleComponent";
+import InputComponent from "../../../../styledComponents/InputComponent";
+import CardLinks from "../../../../styledComponents/CardLinks";
 
 const helpCards = [
   {
     id: 0,
     link_text: "Submit a Ticket",
-    link_url: "",
+    link_url: "submit-a-ticket",
   },
   {
     id: 1,
     link_text: "Knowledge Base/FAQs",
-    link_url: "",
+    link_url: "faq",
   },
   {
     id: 2,
     link_text: "Live Chat",
-    link_url: "",
+    link_url: "live-chat",
   },
   {
     id: 3,
     link_text: "Contact Us",
-    link_url: "",
+    link_url: "contact-us",
   },
   {
     id: 4,
     link_text: "Recent Tickets",
-    link_url: "",
+    link_url: "recent-tickets",
   },
   {
     id: 5,
     link_text: "Guided Tutorials",
-    link_url: "",
+    link_url: "guided-tutorials",
   },
 ];
 

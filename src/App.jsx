@@ -24,10 +24,24 @@ import InstitutesSubscription from "./pages/Dashboard/Institutes/Subscription";
 import InstitutesReports from "./pages/Dashboard/Institutes/Reports";
 import InstitutesNotification from "./pages/Dashboard/Institutes/Notification";
 import InstitutesArchiveNotification from "./pages/Dashboard/Institutes/ArchiveNotification";
-import InstitutesSettings from "./pages/Dashboard/Institutes/Settings";
-import InstitutesHelp from "./pages/Dashboard/Institutes/Help";
+// 
+import InstitutesSettings from "./pages/Dashboard/Institutes/Settings/Settings";
+import InstitutesAccountSettings from "./pages/Dashboard/Institutes/Settings/AccountSettings";
+import InstitutesUserManagement from "./pages/Dashboard/Institutes/Settings/UserManagement";
+import InstitutesSubscriptionManagement from "./pages/Dashboard/Institutes/Settings/SubscriptionManagement";
+import InstitutesSystemPreferences from "./pages/Dashboard/Institutes/Settings/SystemPreferences";
+import InstitutesSecuritySettings from "./pages/Dashboard/Institutes/Settings/SecuritySettings";
+// 
+import InstitutesHelp from "./pages/Dashboard/Institutes/Help/Help";
+import InstitutesContactUs from "./pages/Dashboard/Institutes/Help/ContactUs";
+import InstitutesFAQ from "./pages/Dashboard/Institutes/Help/FAQ";
+import InstitutesGuidedTutorials from "./pages/Dashboard/Institutes/Help/GuidedTutorials";
+import InstitutesLiveChat from "./pages/Dashboard/Institutes/Help/LiveChat";
+import InstitutesRecentTickets from "./pages/Dashboard/Institutes/Help/RecentTickets";
+import InstitutesSubmitATicket from "./pages/Dashboard/Institutes/Help/SubmitATicket";
 // TEACHERS
 import TeachersHome from "./pages/Dashboard/Teachers/Home";
+import TeachersClassManagement from "./pages/Dashboard/Teachers/ClassManagement";
 // STUDENTS
 import StudentsHome from "./pages/Dashboard/Students/Home";
 // PARENTS
@@ -78,8 +92,56 @@ function App() {
           <Route path="reports" element={<InstitutesReports />} />
           <Route path="notification" element={<InstitutesNotification />} />
           <Route path="archive" element={<InstitutesArchiveNotification />} />
-          <Route path="settings" element={<InstitutesSettings />} />
-          <Route path="help" element={<InstitutesHelp />} />
+          <Route path="settings">
+            <Route index element={<InstitutesSettings />} />
+            <Route
+              path="account-settings"
+              element={<InstitutesAccountSettings />}
+            />
+            <Route
+              path="user-management"
+              element={<InstitutesUserManagement />}
+            />
+            <Route
+              path="subscription-management"
+              element={<InstitutesSubscriptionManagement />}
+            />
+            <Route
+              path="system-preferences"
+              element={<InstitutesSystemPreferences />}
+            />
+            <Route
+              path="security-settings"
+              element={<InstitutesSecuritySettings />}
+            />
+          </Route>
+          <Route path="help">
+            <Route index element={<InstitutesHelp />} />
+            <Route
+              path="contact-us"
+              element={<InstitutesContactUs />}
+            />
+            <Route
+              path="faq"
+              element={<InstitutesFAQ />}
+            />
+            <Route
+              path="guided-tutorials"
+              element={<InstitutesGuidedTutorials />}
+            />
+            <Route
+              path="live-chat"
+              element={<InstitutesLiveChat />}
+            />
+            <Route
+              path="recent-tickets"
+              element={<InstitutesRecentTickets />}
+            />
+            <Route
+              path="submit-a-ticket"
+              element={<InstitutesSubmitATicket />}
+            />
+          </Route>
         </Route>
         {/* TEACHERS */}
         <Route
@@ -92,6 +154,7 @@ function App() {
         >
           <Route index element={<TeachersHome />} />
           <Route path="home" element={<TeachersHome />} />
+          <Route path="class" element={<TeachersClassManagement />} />
         </Route>
         {/* STUDENTS */}
         <Route

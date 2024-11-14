@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const CardLinks = ({ icon, link_text, link_url }) => {
   return (
     <Link
-      to={link_url}
+      to={link_url || "#"}
       className="w-full min-h-40 flex flex-col justify-center items-center text-center gap-4 p-2 rounded-md border shadow-sm bg-[#0A66C2] text-white hover:bg-[#3785d3] transition-all duration-300 ease-in-out"
     >
       {icon && (
