@@ -4,32 +4,32 @@ import CardLinks from "../../../../styledComponents/CardLinks";
 const LinksData = [
   {
     id: 0,
-    link_text: "",
+    link_text: "Class List",
     link_url: "",
   },
   {
     id: 1,
-    link_text: "",
+    link_text: "Attendance",
     link_url: "",
   },
   {
     id: 2,
-    link_text: "",
+    link_text: "Assignment",
     link_url: "",
   },
   {
     id: 3,
-    link_text: "",
+    link_text: "Parent Communication",
     link_url: "",
   },
   {
     id: 4,
-    link_text: "",
+    link_text: "Resources & Materials",
     link_url: "",
   },
   {
     id: 5,
-    link_text: "",
+    link_text: "Announcements",
     link_url: "",
   },
 ];

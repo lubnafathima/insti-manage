@@ -1,25 +1,15 @@
-import Cards from "../../../../styledComponents/Cards";
+import CardDetailed from "../../../../styledComponents/CardDetailed";
 
 const overview = [
   {
     id: 0,
-    title: "Total Classes Today",
-    content: "4",
+    title: "Grade 5A - Mathematics",
+    item: ["Total Students: 30", "Attendance Rate: 95%", "Pending Homework: 3"],
   },
   {
     id: 1,
-    title: "Pending Assignments",
-    content: "3",
-  },
-  {
-    id: 2,
-    title: "Pending Messages",
-    content: "2",
-  },
-  {
-    id: 3,
-    title: "Performance Alerts",
-    content: "2",
+    title: "Grade 6B - Science",
+    item: ["Total Students: 28", "Attendance Rate: 92%", "Upcoming Test: 09/30/2024"],
   },
 ];
 
@@ -27,7 +17,7 @@ const Overview = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 mb-4 gap-2">
       {overview.map((data) => (
-        <Cards key={data.id} title={data.title} content={data.content} />
+        <CardDetailed key={data.id} title={data.title} item={data.item} />
       ))}
     </div>
   );

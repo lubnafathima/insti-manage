@@ -15,7 +15,6 @@ const RecentActivities = () => {
     <div>
       <TitleComponent title="Recent Activities" />
       <TableComponent tableHeader={tableHeader} tableData={tableData} />
-      
     </div>
   )
 }

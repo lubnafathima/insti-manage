@@ -42,6 +42,7 @@ import InstitutesSubmitATicket from "./pages/Dashboard/Institutes/Help/SubmitATi
 // TEACHERS
 import TeachersHome from "./pages/Dashboard/Teachers/Home";
 import TeachersClassManagement from "./pages/Dashboard/Teachers/ClassManagement";
+import TeachersClassSchedule from "./pages/Dashboard/Teachers/ClassSchedule";
 // STUDENTS
 import StudentsHome from "./pages/Dashboard/Students/Home";
 // PARENTS
@@ -155,7 +156,8 @@ function App() {
           <Route index element={<TeachersHome />} />
           <Route path="home" element={<TeachersHome />} />
           <Route path="class" element={<TeachersClassManagement />} />
-        </Route>
+          <Route path="schedule" element={<TeachersClassSchedule />} />
+          </Route>
         {/* STUDENTS */}
         <Route
           path="/students"
