@@ -43,6 +43,11 @@ import InstitutesSubmitATicket from "./pages/Dashboard/Institutes/Help/SubmitATi
 import TeachersHome from "./pages/Dashboard/Teachers/Home";
 import TeachersClassManagement from "./pages/Dashboard/Teachers/ClassManagement";
 import TeachersClassSchedule from "./pages/Dashboard/Teachers/ClassSchedule";
+import TeachersSubjectManagement from "./pages/Dashboard/Teachers/SubjectManagement";
+import TeachersStudentReports from "./pages/Dashboard/Teachers/StudentReports";
+import TeachersParentCommunication from "./pages/Dashboard/Teachers/ParentCommunication";
+import TeachersAssignmentsExams from "./pages/Dashboard/Teachers/AssignmentsExams";
+import TeachersSettings from "./pages/Dashboard/Teachers/Settings";
 // STUDENTS
 import StudentsHome from "./pages/Dashboard/Students/Home";
 // PARENTS
@@ -157,6 +162,11 @@ function App() {
           <Route path="home" element={<TeachersHome />} />
           <Route path="class" element={<TeachersClassManagement />} />
           <Route path="schedule" element={<TeachersClassSchedule />} />
+          <Route path="subject" element={<TeachersSubjectManagement />} />
+          <Route path="report" element={<TeachersStudentReports />} />
+          <Route path="communication" element={<TeachersParentCommunication />} />
+          <Route path="assignments" element={<TeachersAssignmentsExams />} />
+          <Route path="settings" element={<TeachersSettings />} />
           </Route>
         {/* STUDENTS */}
         <Route
