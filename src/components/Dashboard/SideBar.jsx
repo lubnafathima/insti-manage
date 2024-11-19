@@ -18,6 +18,12 @@ const SideBar = () => {
     console.log("Current Role:", role);
   }, [role]);
 
+  // Helper function to check if the current path matches the item's path or is a sub-path
+  const isActive = (path) => {
+    if (!path) return false;
+    return location.pathname.startsWith(path);
+  };
+
   return (
     <div className="fixed w-72 h-screen bg-slate-100 border-r md:flex flex-col justify-between gap-2 p-4 hidden">
       <div>
@@ -37,7 +43,7 @@ const SideBar = () => {
                   }
                 }}
                 className={`flex items-center gap-2 px-3 py-2 rounded-md ${
-                  location.pathname === item.path
+                  isActive(item.path)
                     ? "bg-[#0A66C2] text-white"
                     : "text-gray-500 hover:bg-slate-200"
                 }`}
@@ -56,7 +62,7 @@ const SideBar = () => {
                       key={subIndex}
                       to={subItem.path}
                       className={`flex items-center gap-2 px-3 py-2 rounded-md ${
-                        location.pathname === subItem.path
+                        isActive(subItem.path)
                           ? "bg-[#0A66C2] text-white"
                           : "text-gray-500 hover:bg-slate-200"
                       }`}
