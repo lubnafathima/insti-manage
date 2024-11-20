@@ -1,4 +1,5 @@
 import CardDetailed from "../../../../styledComponents/CardDetailed";
+import TitleComponent from "../../../../styledComponents/TitleComponent";
 
 const overview = [
   {
@@ -19,11 +20,14 @@ const overview = [
 
 const SubjectOverview = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 mb-4 gap-2">
-      {overview.map((data) => (
-        <CardDetailed key={data.id} title={data.title} item={data.item} />
-      ))}
-    </div>
+    <>
+      <TitleComponent title="Subject Overview" />
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 mb-4 gap-2">
+        {overview.map((data) => (
+          <CardDetailed key={data.id} title={data.title} item={data.item} />
+        ))}
+      </div>
+    </>
   );
 };
 

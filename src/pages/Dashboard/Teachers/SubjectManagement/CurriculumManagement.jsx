@@ -12,7 +12,7 @@ const tableData = [
 const CurriculumManagement = () => {
   return (
     <div>
-      <TitleComponent title="" />
+      <TitleComponent title="Curriculum Management" />
       <TableComponent tableHeader={tableHeader} tableData={tableData} />
     </div>
   );

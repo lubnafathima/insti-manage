@@ -12,7 +12,7 @@ const tableData = [
 const GradesAssessment = () => {
   return (
     <div>
-      <TitleComponent title="" />
+      <TitleComponent title="Grades & Assessment" />
       <TableComponent tableHeader={tableHeader} tableData={tableData} />
     </div>
   )

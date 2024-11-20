@@ -12,7 +12,7 @@ const tableData = [
 const StudentProgress = () => {
   return (
     <div>
-      <TitleComponent title="" />
+      <TitleComponent title="Student Progress Tracker" />
       <TableComponent tableHeader={tableHeader} tableData={tableData} />
     </div>
   )
