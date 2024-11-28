@@ -64,11 +64,7 @@ import TeachersSubjectReports from "./pages/Dashboard/Teachers/StudentReports/Su
 //
 import TeachersParentCommunication from "./pages/Dashboard/Teachers/ParentCommunication/ParentCommunication";
 import TeachersAnnouncements from "./pages/Dashboard/Teachers/ParentCommunication/Announcements";
-import TeachersCommunicationOverview from "./pages/Dashboard/Teachers/ParentCommunication/CommunicationOverview";
-import TeachersCommunicationExport from "./pages/Dashboard/Teachers/ParentCommunication/Export";
 import TeachersInboxOutbox from "./pages/Dashboard/Teachers/ParentCommunication/InboxOutbox";
-import TeachersMeetingScheduling from "./pages/Dashboard/Teachers/ParentCommunication/MeetingScheduling";
-import TeachersMessageHistory from "./pages/Dashboard/Teachers/ParentCommunication/MessageHistory";
 import TeachersRealTimeChat from "./pages/Dashboard/Teachers/ParentCommunication/RealTimeChat";
 //
 import TeachersAssignmentsExams from "./pages/Dashboard/Teachers/AssignmentsExams/AssignmentsExams";
@@ -76,7 +72,7 @@ import TeachersAssignmentsOverview from "./pages/Dashboard/Teachers/AssignmentsE
 import TeachersCreateNewAssignment from "./pages/Dashboard/Teachers/AssignmentsExams/CreateNewAssignment";
 import TeachersCreateNewExam from "./pages/Dashboard/Teachers/AssignmentsExams/CreateNewExam";
 import TeachersExamOverview from "./pages/Dashboard/Teachers/AssignmentsExams/ExamOverview";
-import TeachersGradingSubmissions from "./pages/Dashboard/Teachers/AssignmentsExams/GradingSubmissions";
+import TeachersSubmissions from "./pages/Dashboard/Teachers/AssignmentsExams/Submissions";
 import TeachersNotifications from "./pages/Dashboard/Teachers/AssignmentsExams/Notifications";
 import TeachersViewDetails from "./pages/Dashboard/Teachers/AssignmentsExams/ViewDetails";
 //
@@ -217,11 +213,7 @@ function App() {
           <Route path="communication">
             <Route index element={<TeachersParentCommunication />} />
             <Route path="announcements" element={<TeachersAnnouncements />} />
-            <Route path="overview" element={<TeachersCommunicationOverview />} />
-            <Route path="export" element={<TeachersCommunicationExport />} />
             <Route path="mail" element={<TeachersInboxOutbox />} />
-            <Route path="meeting-scheduling" element={<TeachersMeetingScheduling />} />
-            <Route path="history" element={<TeachersMessageHistory />} />
             <Route path="chat" element={<TeachersRealTimeChat />} />
           </Route>
           <Route path="assignments">
@@ -230,7 +222,7 @@ function App() {
             <Route path="new-assignment" element={<TeachersCreateNewAssignment />} />
             <Route path="new-exam" element={<TeachersCreateNewExam />} />
             <Route path="exam-overview" element={<TeachersExamOverview />} />
-            <Route path="submissions" element={<TeachersGradingSubmissions />} />
+            <Route path="submissions" element={<TeachersSubmissions />} />
             <Route path="notifications" element={<TeachersNotifications />} />
             <Route path="view" element={<TeachersViewDetails />} />
           </Route>

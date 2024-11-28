@@ -3,11 +3,6 @@ import CardLinks from "../../../../styledComponents/CardLinks";
 
 const LinksData = [
   {
-    id: 0,
-    link_text: "Parent Communication Overview",
-    link_url: "overview",
-  },
-  {
     id: 1,
     link_text: "Inbox/Outbox",
     link_url: "mail",
@@ -16,16 +11,6 @@ const LinksData = [
     id: 2,
     link_text: "New Message/Announcements",
     link_url: "announcements",
-  },
-  {
-    id: 3,
-    link_text: "Message History",
-    link_url: "history",
-  },
-  {
-    id: 4,
-    link_text: "Parent-Teacher Meeting Scheduling",
-    link_url: "meeting-scheduling",
   },
   {
     id: 5,

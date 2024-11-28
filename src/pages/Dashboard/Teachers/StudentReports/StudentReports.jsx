@@ -9,7 +9,7 @@ const LinksData = [
   },
   {
     id: 1,
-    link_text: "Individual Student Performance Reports",
+    link_text: "Individual Student Performance Reports (Sub page)",
     link_url: "student",
   },
   {

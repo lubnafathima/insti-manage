@@ -8,28 +8,13 @@ const LinksData = [
     link_url: "overview",
   },
   {
-    id: 1,
-    link_text: "Create New Assignment",
-    link_url: "new-assignment",
-  },
-  {
     id: 2,
     link_text: "Exam Overview",
     link_url: "exam-overview",
   },
   {
-    id: 3,
-    link_text: "Create New Exam",
-    link_url: "new-exam",
-  },
-  {
-    id: 4,
-    link_text: "View Assignment/Exam Details",
-    link_url: "view",
-  },
-  {
     id: 5,
-    link_text: "Grading & Submissions",
+    link_text: "Submissions",
     link_url: "submissions",
   },
   {
