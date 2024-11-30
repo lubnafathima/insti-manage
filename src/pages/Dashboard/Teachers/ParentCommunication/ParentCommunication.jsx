@@ -4,23 +4,18 @@ import CardLinks from "../../../../styledComponents/CardLinks";
 const LinksData = [
   {
     id: 1,
-    link_text: "Inbox/Outbox",
+    link_text: "Inbox",
     link_url: "mail",
   },
   {
     id: 2,
-    link_text: "New Message/Announcements",
+    link_text: "Announcements",
     link_url: "announcements",
   },
   {
     id: 5,
-    link_text: "Real-Time Chat (Optional)",
+    link_text: "Real-Time Chat",
     link_url: "chat",
-  },
-  {
-    id: 6,
-    link_text: "Export/Archive Communication (Optional)",
-    link_url: "export",
   },
 ];
 
