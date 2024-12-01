@@ -101,14 +101,6 @@ const AccountSettings = () => {
               ></div>
             </div>
           </div>
-
-          <span
-            className={`text-sm font-medium ${
-              isEnabled ? "text-green-500" : "text-gray-500"
-            }`}
-          >
-            {isEnabled ? "Enabled" : "Disabled"}
-          </span>
         </div>
       </div>
       <div>
