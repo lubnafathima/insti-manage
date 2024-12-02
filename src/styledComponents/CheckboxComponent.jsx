@@ -1,4 +1,3 @@
-import React from "react";
 
 const CheckboxComponent = ({ list, selectedItems, onChange }) => {
   return (
