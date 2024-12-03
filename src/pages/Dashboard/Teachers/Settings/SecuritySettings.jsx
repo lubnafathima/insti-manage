@@ -42,14 +42,14 @@ const SecuritySettings = () => {
         <p className="text-sm text-gray-500 mb-2">
           Update your account password for added security.
         </p>
-        <button
+        {/* <button
           onClick={() => setShowPasswordFields((prev) => !prev)}
           className="text-blue-500 underline"
         >
           {showPasswordFields ? "Cancel" : "Change Password"}
-        </button>
+        </button> */}
 
-        {showPasswordFields && (
+        {/* {showPasswordFields && ( */}
           <div className="mt-4">
             <input
               type="password"
@@ -62,7 +62,7 @@ const SecuritySettings = () => {
               Update Password
             </button>
           </div>
-        )}
+        {/* )} */}
       </div>
 
       {/* Set Security Questions Section */}
