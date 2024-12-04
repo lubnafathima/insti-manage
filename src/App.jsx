@@ -87,6 +87,95 @@ import TeachersSecuritySettings from "./pages/Dashboard/Teachers/Settings/Securi
 import TeachersSupportHelp from "./pages/Dashboard/Teachers/Settings/SupportHelp";
 // STUDENTS
 import StudentsHome from "./pages/Dashboard/Students/Home";
+//
+import StudentClasses from "./pages/Dashboard/Students/Classes/Classes";
+import StudentTimeTable from "./pages/Dashboard/Students/Classes/TimeTable";
+import StudentClassOverview from "./pages/Dashboard/Students/Classes/ClassOverview";
+import StudentClassAssignments from "./pages/Dashboard/Students/Classes/Assignments";
+import StudentMaterials from "./pages/Dashboard/Students/Classes/Materials";
+import StudentClassNotes from "./pages/Dashboard/Students/Classes/ClassNotes";
+import StudentClassCommunication from "./pages/Dashboard/Students/Classes/Communication";
+//
+import StudentAssignments from "./pages/Dashboard/Students/Assignments/Assignments";
+import StudentAssignmentsOverview from "./pages/Dashboard/Students/Assignments/AssignmentsOverview";
+import StudentUpcomingDeadlines from "./pages/Dashboard/Students/Assignments/UpcomingDeadlines";
+import StudentSubmission from "./pages/Dashboard/Students/Assignments/Submission";
+import StudentAssignmentGrading from "./pages/Dashboard/Students/Assignments/Grading";
+import StudentAssignmentArchive from "./pages/Dashboard/Students/Assignments/Archive";
+import StudentAssignmentCalendarView from "./pages/Dashboard/Students/Assignments/CalendarView";
+//
+import StudentExams from "./pages/Dashboard/Students/Exams/Exams";
+import StudentExamsOverview from "./pages/Dashboard/Students/Exams/ExamsOverview";
+import StudentExamGrading from "./pages/Dashboard/Students/Exams/Grading";
+import StudentExamArchive from "./pages/Dashboard/Students/Exams/Archive";
+import StudentExamCalendarView from "./pages/Dashboard/Students/Exams/CalendarView";
+//
+import StudentGrades from "./pages/Dashboard/Students/Grades/Grades";
+import StudentGradeOverview from "./pages/Dashboard/Students/Grades/GradeOverview";
+import StudentDetailedGrade from "./pages/Dashboard/Students/Grades/DetailedGrade";
+import StudentCumulativeGrade from "./pages/Dashboard/Students/Grades/CumulativeGrade";
+import StudentGradeAnalysis from "./pages/Dashboard/Students/Grades/GradeAnalysis";
+import StudentGradeFeedback from "./pages/Dashboard/Students/Grades/GradeFeedback";
+import StudentGradeComparison from "./pages/Dashboard/Students/Grades/GradeComparison";
+import StudentDownloadReport from "./pages/Dashboard/Students/Grades/DownloadReport";
+//
+import StudentAttendance from "./pages/Dashboard/Students/Attendance/Attendance";
+import StudentAttendanceOverview from "./pages/Dashboard/Students/Attendance/AttendanceOverview";
+import StudentAttendanceRecord from "./pages/Dashboard/Students/Attendance/AttendanceRecord";
+import StudentAttendanceBySubject from "./pages/Dashboard/Students/Attendance/AttendanceBySubject";
+import StudentAbsenceHistory from "./pages/Dashboard/Students/Attendance/AbsenceHistory";
+import StudentAttendanceWarnings from "./pages/Dashboard/Students/Attendance/AttendanceWarnings";
+import StudentAttendanceAnalysis from "./pages/Dashboard/Students/Attendance/AttendanceAnalysis";
+import StudentAttendanceDownloadReport from "./pages/Dashboard/Students/Attendance/DownloadReport";
+//
+import StudentReports from "./pages/Dashboard/Students/Reports/Reports";
+import StudentPerformanceSummary from "./pages/Dashboard/Students/Reports/PerformanceSummary";
+import StudentGradeReport from "./pages/Dashboard/Students/Reports/GradeReport";
+import StudentAssignmentPerformance from "./pages/Dashboard/Students/Reports/AssignmentPerformance";
+import StudentExamPerformance from "./pages/Dashboard/Students/Reports/ExamPerformance";
+import StudentAttendanceReport from "./pages/Dashboard/Students/Reports/AttendanceReport";
+import StudentProgressTracking from "./pages/Dashboard/Students/Reports/ProgressTracking";
+//
+import StudentCommunication from "./pages/Dashboard/Students/Communication/Communication";
+import StudentAnnouncements from "./pages/Dashboard/Students/Communication/Announcements";
+import StudentContactTeachers from "./pages/Dashboard/Students/Communication/ContactTeachers";
+import StudentClassDiscussions from "./pages/Dashboard/Students/Communication/ClassDiscussions";
+import StudentSupportTickets from "./pages/Dashboard/Students/Communication/SupportTickets";
+import StudentCommunicationNotifications from "./pages/Dashboard/Students/Communication/Notifications";
+import StudentAttachments from "./pages/Dashboard/Students/Communication/Attachments";
+import StudentCommunicationHistory from "./pages/Dashboard/Students/Communication/CommunicationHistory";
+//
+import StudentNotifications from "./pages/Dashboard/Students/Notifications/Notifications";
+import StudentCategorizedNotifications from "./pages/Dashboard/Students/Notifications/CategorizedNotifications";
+import StudentNotificationFilters from "./pages/Dashboard/Students/Notifications/NotificationFilters";
+import StudentNotificationDetails from "./pages/Dashboard/Students/Notifications/NotificationDetails";
+import StudentActionableNotifications from "./pages/Dashboard/Students/Notifications/ActionableNotifications";
+import StudentReadNotifications from "./pages/Dashboard/Students/Notifications/ReadNotifications";
+import StudentSearchNotifications from "./pages/Dashboard/Students/Notifications/SearchNotifications";
+import StudentNotificationSettings from "./pages/Dashboard/Students/Notifications/NotificationSettings";
+//
+import StudentParentPortal from "./pages/Dashboard/Students/ParentPortal/ParentPortal";
+import StudentParentInformation from "./pages/Dashboard/Students/ParentPortal/ParentInformation";
+import StudentAcademicReports from "./pages/Dashboard/Students/ParentPortal/AcademicReports";
+import StudentParentPortalProgressTracking from "./pages/Dashboard/Students/ParentPortal/ProgressTracking";
+import StudentAttendanceReports from "./pages/Dashboard/Students/ParentPortal/AttendanceReports";
+import StudentParentPortalCommunication from "./pages/Dashboard/Students/ParentPortal/Communication";
+import StudentParentPortalNotifications from "./pages/Dashboard/Students/ParentPortal/Notifications";
+import StudentMeetingSchedules from "./pages/Dashboard/Students/ParentPortal/MeetingSchedules";
+import StudentParentalPermissions from "./pages/Dashboard/Students/ParentPortal/ParentalPermissions";
+import StudentActivityLogs from "./pages/Dashboard/Students/ParentPortal/ActivityLogs";
+//
+import StudentSettings from "./pages/Dashboard/Students/Settings/Settings";
+import StudentProfileSettings from "./pages/Dashboard/Students/Settings/ProfileSettings";
+import StudentAccountSettings from "./pages/Dashboard/Students/Settings/AccountSettings";
+import StudentSettingsNotification from "./pages/Dashboard/Students/Settings/NotificationSettings";
+import StudentPrivacySettings from "./pages/Dashboard/Students/Settings/PrivacySettings";
+import StudentSecurity from "./pages/Dashboard/Students/Settings/Security";
+import StudentAcademicPreferences from "./pages/Dashboard/Students/Settings/AcademicPreferences";
+import StudentCommunicationPreferences from "./pages/Dashboard/Students/Settings/CommunicationPreferences";
+import StudentLinkedAccounts from "./pages/Dashboard/Students/Settings/LinkedAccounts";
+import StudentAppearance from "./pages/Dashboard/Students/Settings/Appearance";
+import StudentHelp from "./pages/Dashboard/Students/Settings/Help";
 // PARENTS
 import ParentsHome from "./pages/Dashboard/Parents/Home";
 
@@ -192,11 +281,20 @@ function App() {
           <Route path="schedule" element={<TeachersClassSchedule />} />
           <Route path="subject">
             <Route index element={<TeachersSubjectManagement />} />
-            <Route path="curriculum" element={<TeachersCurriculumManagement />} />
+            <Route
+              path="curriculum"
+              element={<TeachersCurriculumManagement />}
+            />
             <Route path="grades" element={<TeachersGradesAssessment />} />
             <Route path="progress" element={<TeachersStudentProgress />} />
-            <Route path="announcements" element={<TeachersSubjectAnnouncements />} />
-            <Route path="assignments" element={<TeachersSubjectAssignments />} />
+            <Route
+              path="announcements"
+              element={<TeachersSubjectAnnouncements />}
+            />
+            <Route
+              path="assignments"
+              element={<TeachersSubjectAssignments />}
+            />
             <Route path="attendance" element={<TeachersSubjectAttendance />} />
             <Route path="overview" element={<TeachersSubjectOverview />} />
             <Route path="resources" element={<TeachersSubjectResources />} />
@@ -207,8 +305,14 @@ function App() {
             <Route path="export" element={<TeachersExport />} />
             <Route path="student" element={<TeachersIndividualStudent />} />
             <Route path="recent-reports" element={<TeachersRecentReports />} />
-            <Route path="student-overview" element={<TeachersStudentOverview />} />
-            <Route path="subject-reports" element={<TeachersSubjectReports />} />
+            <Route
+              path="student-overview"
+              element={<TeachersStudentOverview />}
+            />
+            <Route
+              path="subject-reports"
+              element={<TeachersSubjectReports />}
+            />
           </Route>
           <Route path="communication">
             <Route index element={<TeachersParentCommunication />} />
@@ -219,7 +323,10 @@ function App() {
           <Route path="assignments">
             <Route index element={<TeachersAssignmentsExams />} />
             <Route path="overview" element={<TeachersAssignmentsOverview />} />
-            <Route path="new-assignment" element={<TeachersCreateNewAssignment />} />
+            <Route
+              path="new-assignment"
+              element={<TeachersCreateNewAssignment />}
+            />
             <Route path="new-exam" element={<TeachersCreateNewExam />} />
             <Route path="exam-overview" element={<TeachersExamOverview />} />
             <Route path="submissions" element={<TeachersSubmissions />} />
@@ -228,11 +335,23 @@ function App() {
           </Route>
           <Route path="settings">
             <Route index element={<TeachersSettings />} />
-            <Route path="account-settings" element={<TeachersAccountSettings />} />
-            <Route path="preferences" element={<TeachersClassroomPreferences />} />
+            <Route
+              path="account-settings"
+              element={<TeachersAccountSettings />}
+            />
+            <Route
+              path="preferences"
+              element={<TeachersClassroomPreferences />}
+            />
             <Route path="integrations" element={<TeachersIntegrations />} />
-            <Route path="notifications" element={<TeachersNotificationsSettings />} />
-            <Route path="personal-information" element={<TeachersPersonalInformation />} />
+            <Route
+              path="notifications"
+              element={<TeachersNotificationsSettings />}
+            />
+            <Route
+              path="personal-information"
+              element={<TeachersPersonalInformation />}
+            />
             <Route path="privacy" element={<TeachersPrivacySettings />} />
             <Route path="security" element={<TeachersSecuritySettings />} />
             <Route path="support-help" element={<TeachersSupportHelp />} />
@@ -249,6 +368,136 @@ function App() {
         >
           <Route index element={<StudentsHome />} />
           <Route path="home" element={<StudentsHome />} />
+          <Route path="classes">
+            <Route index element={<StudentClasses />} />
+            <Route path="timetable" element={<StudentTimeTable />} />
+            <Route path="class-overview" element={<StudentClassOverview />} />
+            <Route path="assignments" element={<StudentClassAssignments />} />
+            <Route path="materials" element={<StudentMaterials />} />
+            <Route path="class-notes" element={<StudentClassNotes />} />
+            <Route
+              path="communication"
+              element={<StudentClassCommunication />}
+            />
+          </Route>
+          <Route path="assignments">
+            <Route index element={<StudentAssignments />} />
+            <Route
+              path="assignments-overview"
+              element={<StudentAssignmentsOverview />}
+            />
+            <Route
+              path="upcoming-deadlines"
+              element={<StudentUpcomingDeadlines />}
+            />
+            <Route path="submission" element={<StudentSubmission />} />
+            <Route
+              path="assignment-grading"
+              element={<StudentAssignmentGrading />}
+            />
+            <Route
+              path="assignment-archive"
+              element={<StudentAssignmentArchive />}
+            />
+            <Route
+              path="assignment-calendar-view"
+              element={<StudentAssignmentCalendarView />}
+            />
+          </Route>
+          <Route path="exams">
+            <Route index element={<StudentExams />} />
+            <Route path="exams-overview" element={<StudentExamsOverview />} />
+            <Route path="exam-grading" element={<StudentExamGrading />} />
+            <Route path="exam-archive" element={<StudentExamArchive />} />
+            <Route
+              path="exam-calendar-view"
+              element={<StudentExamCalendarView />}
+            />
+            <Route
+              path="exam-calendar-view"
+              element={<StudentExamCalendarView />}
+            />
+          </Route>
+          <Route path="grades">
+            <Route index element={<StudentGrades />} />
+            <Route path="grade-overview" element={<StudentGradeOverview />} />
+            <Route path="detailed-grade" element={<StudentDetailedGrade />} />
+            <Route
+              path="cumulative-grade"
+              element={<StudentCumulativeGrade />}
+            />
+            <Route path="grade-analysis" element={<StudentGradeAnalysis />} />
+            <Route path="grade-feedback" element={<StudentGradeFeedback />} />
+            <Route
+              path="grade-comparison"
+              element={<StudentGradeComparison />}
+            />
+            <Route path="download-report" element={<StudentDownloadReport />} />
+          </Route>
+          <Route path="attendance">
+            <Route index element={<StudentAttendance />} />
+            <Route path="attendance-overview" element={<StudentAttendanceOverview />} />
+            <Route path="attendance-record" element={<StudentAttendanceRecord />} />
+            <Route path="attendance-by-subject" element={<StudentAttendanceBySubject />} />
+            <Route path="absence-history" element={<StudentAbsenceHistory />} />
+            <Route path="attendance-warnings" element={<StudentAttendanceWarnings />} />
+            <Route path="attendance-analysis" element={<StudentAttendanceAnalysis />} />
+            <Route path="attendance-download-report" element={<StudentAttendanceDownloadReport />} />
+          </Route>
+          <Route path="reports">
+            <Route index element={<StudentReports />} />
+            <Route path="performance-summary" element={<StudentPerformanceSummary />} />
+            <Route path="grade-Report" element={<StudentGradeReport />} />
+            <Route path="assignment-performance" element={<StudentAssignmentPerformance />} />
+            <Route path="exam-performance" element={<StudentExamPerformance />} />
+            <Route path="attendance-report" element={<StudentAttendanceReport />} />
+            <Route path="progress-tracking" element={<StudentProgressTracking />} />
+          </Route>
+          <Route path="communication">
+            <Route index element={<StudentCommunication />} />
+            <Route path="announcements" element={<StudentAnnouncements />} />
+            <Route path="contact-teachers" element={<StudentContactTeachers />} />
+            <Route path="class-discussions" element={<StudentClassDiscussions />} />
+            <Route path="Support-tickets" element={<StudentSupportTickets />} />
+            <Route path="communication-notifications" element={<StudentCommunicationNotifications />} />
+            <Route path="attachments" element={<StudentAttachments />} />
+            <Route path="communication-history" element={<StudentCommunicationHistory />} />
+          </Route>
+          <Route path="notifications">
+            <Route index element={<StudentNotifications />} />
+            <Route path="categorized-notifications" element={<StudentCategorizedNotifications />} />
+            <Route path="notification-filters" element={<StudentNotificationFilters />} />
+            <Route path="notification-details" element={<StudentNotificationDetails />} />
+            <Route path="actionable-notifications" element={<StudentActionableNotifications />} />
+            <Route path="read-notifications" element={<StudentReadNotifications />} />
+            <Route path="search-notifications" element={<StudentSearchNotifications />} />
+            <Route path="notification-settings" element={<StudentNotificationSettings />} />
+          </Route>
+          <Route path="parent-portal">
+            <Route index element={<StudentParentPortal />} />
+            <Route path="parent-information" element={<StudentParentInformation />} />
+            <Route path="academic-reports" element={<StudentAcademicReports />} />
+            <Route path="progress-tracking" element={<StudentParentPortalProgressTracking />} />
+            <Route path="attendance-reports" element={<StudentAttendanceReports />} />
+            <Route path="communication" element={<StudentParentPortalCommunication />} />
+            <Route path="notifications" element={<StudentParentPortalNotifications />} />
+            <Route path="meeting-schedules" element={<StudentMeetingSchedules />} />
+            <Route path="parental-permissions" element={<StudentParentalPermissions />} />
+            <Route path="activity-logs" element={<StudentActivityLogs />} />
+          </Route>
+          <Route path="settings">
+            <Route index element={<StudentSettings />} />
+            <Route path="profile-settings" element={<StudentProfileSettings />} />
+            <Route path="account-settings" element={<StudentAccountSettings />} />
+            <Route path="notification-settings" element={<StudentSettingsNotification />} />
+            <Route path="privacy-settings" element={<StudentPrivacySettings />} />
+            <Route path="security" element={<StudentSecurity />} />
+            <Route path="academic-preferences" element={<StudentAcademicPreferences />} />
+            <Route path="communication-preferences" element={<StudentCommunicationPreferences />} />
+            <Route path="linked-accounts" element={<StudentLinkedAccounts />} />
+            <Route path="appearance" element={<StudentAppearance />} />
+            <Route path="help" element={<StudentHelp />} />
+          </Route>
         </Route>
         {/* PARENTS */}
         <Route
