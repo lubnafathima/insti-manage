@@ -27,7 +27,7 @@ const QuickAccess = () => {
   return (
     <div className="w-full">
       <h2 className="text-xl font-semibold mt-8 mb-4">Quick Access</h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 ld:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {LinksData.map((data) => (
           <Link
             to={data.link_url}
