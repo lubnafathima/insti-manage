@@ -392,15 +392,15 @@ function App() {
             />
             <Route path="submission" element={<StudentSubmission />} />
             <Route
-              path="assignment-grading"
+              path="grading"
               element={<StudentAssignmentGrading />}
             />
             <Route
-              path="assignment-archive"
+              path="archive"
               element={<StudentAssignmentArchive />}
             />
             <Route
-              path="assignment-calendar-view"
+              path="calendar-view"
               element={<StudentAssignmentCalendarView />}
             />
           </Route>

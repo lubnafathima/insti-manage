@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Calendar = () => {
+const Calendar = ({ task }) => {
   const [currentMonth, setCurrentMonth] = useState(new Date().getMonth());
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
 
@@ -33,12 +33,6 @@ const Calendar = () => {
     return weeks;
   };
 
-  const tasks = {
-    2: "Maths Test",
-    13: "History Assignment Due",
-    30: "Science Lab Report Due",
-  };
-
   return (
     <div className="w-full max-w-7xl mt-8 bg-white rounded-md shadow-md p-6">
       <table className="w-full table-auto border-collapse">
@@ -69,9 +63,9 @@ const Calendar = () => {
                       {day}
                     </div>
                   )}
-                  {day && tasks[day] && (
+                  {day && task[day] && (
                     <div className="mt-2 bg-blue-100 p-2 rounded-sm text-sm absolute bottom-2 left-2 right-2 max-h-24 overflow-auto">
-                      {tasks[day]}
+                      {task[day]}
                     </div>
                   )}
                 </td>
