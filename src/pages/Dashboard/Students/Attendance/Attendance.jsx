@@ -36,7 +36,7 @@ const assignmentsOverviewData = [
 
 const Attendance = () => {
   return (
-    <div>
+    <>
       <TitleComponent title="Attendance Overview" />
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {assignmentsOverviewData.map((data) => (
@@ -47,7 +47,7 @@ const Attendance = () => {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 };
 
