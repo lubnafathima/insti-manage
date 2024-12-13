@@ -459,9 +459,9 @@ function App() {
             <Route path="contact-teachers" element={<StudentContactTeachers />} />
             <Route path="class-discussions" element={<StudentClassDiscussions />} />
             <Route path="Support-tickets" element={<StudentSupportTickets />} />
-            <Route path="communication-notifications" element={<StudentCommunicationNotifications />} />
+            <Route path="notifications" element={<StudentCommunicationNotifications />} />
             <Route path="attachments" element={<StudentAttachments />} />
-            <Route path="communication-history" element={<StudentCommunicationHistory />} />
+            <Route path="history" element={<StudentCommunicationHistory />} />
           </Route>
           <Route path="notifications">
             <Route index element={<StudentNotifications />} />
