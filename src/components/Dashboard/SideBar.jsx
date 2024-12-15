@@ -18,7 +18,6 @@ const SideBar = () => {
     console.log("Current Role:", role);
   }, [role]);
 
-  // Helper function to check if the current path matches the item's path or is a sub-path
   const isActive = (path) => {
     if (!path) return false;
     return location.pathname.startsWith(path);

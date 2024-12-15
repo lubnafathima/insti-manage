@@ -147,7 +147,6 @@ import StudentCommunicationHistory from "./pages/Dashboard/Students/Communicatio
 //
 import StudentNotifications from "./pages/Dashboard/Students/Notifications/Notifications";
 import StudentCategorizedNotifications from "./pages/Dashboard/Students/Notifications/CategorizedNotifications";
-import StudentNotificationFilters from "./pages/Dashboard/Students/Notifications/NotificationFilters";
 import StudentNotificationDetails from "./pages/Dashboard/Students/Notifications/NotificationDetails";
 import StudentActionableNotifications from "./pages/Dashboard/Students/Notifications/ActionableNotifications";
 import StudentReadNotifications from "./pages/Dashboard/Students/Notifications/ReadNotifications";
@@ -466,7 +465,6 @@ function App() {
           <Route path="notifications">
             <Route index element={<StudentNotifications />} />
             <Route path="categorized-notifications" element={<StudentCategorizedNotifications />} />
-            <Route path="notification-filters" element={<StudentNotificationFilters />} />
             <Route path="notification-details" element={<StudentNotificationDetails />} />
             <Route path="actionable-notifications" element={<StudentActionableNotifications />} />
             <Route path="read-notifications" element={<StudentReadNotifications />} />
