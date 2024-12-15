@@ -1,7 +1,6 @@
 import TitleComponent from "../../../../styledComponents/TitleComponent";
 import ButtonFilled from "../../../../styledComponents/ButtonFilled";
 
-// Reusable Notification Component
 const NotificationCard = ({ title, message, buttonText }) => {
   return (
     <div className="bg-white p-6 rounded-md shadow-md">

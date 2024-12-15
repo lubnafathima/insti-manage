@@ -67,7 +67,6 @@ const AddTeacher = ({ onCancel }) => {
             placeholder="Science"
           />
         </div>
-        {/* Role Assignment Starts */}
         <div className="border-t my-8"></div>
         <SubTitleComponent title="Role Assignment" />
         <div className="mt-4 flex gap-2 items-center justify-start w-full">
@@ -99,7 +98,6 @@ const AddTeacher = ({ onCancel }) => {
           />
         </div>
         <div className="border-t my-8"></div>
-        {/* Role Assignment Ends */}
         <div className="mt-4">
           <label className="block text-sm font-medium mb-1" htmlFor="date">
             Joining Date

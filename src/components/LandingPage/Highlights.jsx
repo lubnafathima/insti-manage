@@ -54,7 +54,6 @@ const Highlights = () => {
               className="border-2 flex flex-col gap-2 rounded-lg p-4"
             >
               <BookmarkIcon aria-hidden="true" className="h-6 w-6 bg-blue-500 rounded-full text-white p-1"/> 
-              {/* <img src={highlight.icon} alt="Highlight Icon" className="" /> */}
               <h4 className="text-white">{highlight.title}</h4>
               <p className="text-sm text-slate-300 mb-4 tracking-wide">
                 {highlight.content}

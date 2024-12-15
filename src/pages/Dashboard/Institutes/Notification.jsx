@@ -150,7 +150,7 @@ const Notification = () => {
         <ButtonFilled text="Archive" />
         <ButtonFilled text="Delete" />
         <ButtonFilled text="Download" />
-        <ButtonFilled text="View Archive" /> {/* connect "/archive" route */}
+        <ButtonFilled text="View Archive" /> 
       </div>
       <TableComponent tableHeader={recentHeader} tableData={recentData} />
       <TitleComponent title="Notification Preferences" />

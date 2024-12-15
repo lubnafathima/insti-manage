@@ -1,8 +1,7 @@
-import { FaPaperPlane, FaCheckCircle } from "react-icons/fa"; // Action icons
+import { FaPaperPlane, FaCheckCircle } from "react-icons/fa";
 import ButtonFilled from "../../../../styledComponents/ButtonFilled";
 import TitleComponent from "../../../../styledComponents/TitleComponent";
 
-// Reusable Notification Component
 const NotificationCard = ({ title, message, buttonText, icon }) => {
   return (
     <div className="bg-white p-6 rounded-md shadow-md">
@@ -24,13 +23,13 @@ const ActionableNotifications = () => {
       title: "Assignment Submission Reminder",
       message: "Assignment Due Tomorrow: Submit your History project.",
       buttonText: "Submit Assignment",
-      icon: <FaPaperPlane />, // Submission icon
+      icon: <FaPaperPlane />,
     },
     {
       title: "Grade Release Notification",
       message: "Your Midterm Exam grades are now available.",
       buttonText: "View Grades",
-      icon: <FaCheckCircle />, // Grade release icon
+      icon: <FaCheckCircle />,
     },
   ];
 

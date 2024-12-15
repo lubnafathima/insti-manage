@@ -1,21 +1,16 @@
 import { useState } from "react";
 
-// NotificationSettings component with settings options
 const NotificationSettings = () => {
-  // State to manage notification preferences (on/off)
   const [notificationPreferences, setNotificationPreferences] = useState({
     academic: true,
     systemUpdates: false,
     reminders: true,
   });
 
-  // State to manage delivery preferences (email, SMS, in-app)
   const [deliveryPreference, setDeliveryPreference] = useState("email");
 
-  // State to manage frequency preference (instant, daily, weekly)
   const [frequencyPreference, setFrequencyPreference] = useState("instant");
 
-  // Handle toggling of notification preferences
   const handleNotificationToggle = (category) => {
     setNotificationPreferences((prev) => ({
       ...prev,
@@ -23,7 +18,6 @@ const NotificationSettings = () => {
     }));
   };
 
-  // Handle saving settings (could be an API call or localStorage update)
   const saveSettings = () => {
     const settings = {
       notificationPreferences,
@@ -31,14 +25,12 @@ const NotificationSettings = () => {
       frequencyPreference,
     };
     console.log("Settings saved:", settings);
-    // You can replace the above with an API call to save the settings.
   };
 
   return (
     <div className="min-h-screen py-10 px-4">
       <h1 className="text-2xl font-semibold mb-6">Notification Settings</h1>
 
-      {/* Notification Preferences Section */}
       <div className="mb-6">
         <h2 className="text-lg font-medium mb-2">Notification Preferences</h2>
         <div className="space-y-4">
@@ -72,7 +64,6 @@ const NotificationSettings = () => {
         </div>
       </div>
 
-      {/* Delivery Preferences Section */}
       <div className="mb-6">
         <h2 className="text-lg font-medium mb-2">Delivery Preferences</h2>
         <div>
@@ -92,7 +83,6 @@ const NotificationSettings = () => {
         </div>
       </div>
 
-      {/* Frequency Settings Section */}
       <div className="mb-6">
         <h2 className="text-lg font-medium mb-2">Frequency Settings</h2>
         <div>
@@ -112,7 +102,6 @@ const NotificationSettings = () => {
         </div>
       </div>
 
-      {/* Save Settings Button */}
       <button
         onClick={saveSettings}
         className="bg-blue-500 text-white px-6 py-2 rounded-md mt-6"

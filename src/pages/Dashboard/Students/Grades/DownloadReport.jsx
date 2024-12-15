@@ -27,9 +27,7 @@ const mathSubjectData = {
 };
 
 const DownloadReport = () => {
-  // Calculate total grade by using the correct assignment score
   const totalGrade = mathSubjectData.assignments.reduce((total, assignment) => {
-    // Convert the score from string (e.g., "90%") to number (e.g., 90)
     const score = parseFloat(assignment.score.replace('%', ''));
     return total + (score * assignment.weightage) / 100;
   }, 0);

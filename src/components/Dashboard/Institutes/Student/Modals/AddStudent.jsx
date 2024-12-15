@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 import SubTitleComponent from "../../../../../styledComponents/SubTitleComponent";
 import ImageUpload from "../../../../../styledComponents/ImageUpload";
 
@@ -67,7 +67,6 @@ const AddStudent = ({ onCancel }) => {
             placeholder="Science"
           />
         </div>
-        {/* Role Assignment Starts */}
         <div className="border-t my-8"></div>
         <SubTitleComponent title="Role Assignment" />
         <div className="mt-4 flex gap-2 items-center justify-start w-full">
@@ -99,7 +98,6 @@ const AddStudent = ({ onCancel }) => {
           />
         </div>
         <div className="border-t my-8"></div>
-        {/* Role Assignment Ends */}
         <div className="mt-4">
           <label className="block text-sm font-medium mb-1" htmlFor="date">
             Joining Date
@@ -136,7 +134,10 @@ const AddStudent = ({ onCancel }) => {
             placeholder="qualifications"
           />
         </div>
-        <ImageUpload onImageUpload={handleImageUpload} onCancelImageUpload={onCancelImageUpload} />
+        <ImageUpload
+          onImageUpload={handleImageUpload}
+          onCancelImageUpload={onCancelImageUpload}
+        />
       </div>
       <div className="flex justify-end space-x-2">
         <button

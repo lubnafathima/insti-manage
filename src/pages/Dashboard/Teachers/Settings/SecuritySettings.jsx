@@ -1,7 +1,6 @@
 import TitleComponent from "../../../../styledComponents/TitleComponent";
 import { useState } from "react";
 
-// Sample data for last login and active devices
 const sampleLastLogin = "2024-09-25, 10:30 AM, IP: 192.168.1.1";
 const sampleActiveDevices = ["MacBook Pro", "iPhone 12"];
 
@@ -14,17 +13,14 @@ const SecuritySettings = () => {
   });
   const [showPasswordFields, setShowPasswordFields] = useState(false);
 
-  // Handle the toggle for two-factor authentication
   const handleToggleTwoFactor = () => {
     setIsTwoFactorEnabled((prevState) => !prevState);
   };
 
-  // Handle changes to password field
   const handlePasswordChange = (event) => {
     setNewPassword(event.target.value);
   };
 
-  // Handle changes to security questions
   const handleSecurityQuestionChange = (event, questionNumber) => {
     setSecurityQuestions((prev) => ({
       ...prev,
@@ -36,7 +32,6 @@ const SecuritySettings = () => {
     <div>
       <TitleComponent title="Security Settings" />
 
-      {/* Change Password Section */}
       <div className="flex flex-col gap-2 py-6 border-b">
         <h2 className="font-semibold text-md">Change Password</h2>
         <p className="text-sm text-gray-500 mb-2">
@@ -50,22 +45,20 @@ const SecuritySettings = () => {
         </button> */}
 
         {/* {showPasswordFields && ( */}
-          <div className="mt-4">
-            <input
-              type="password"
-              value={newPassword}
-              onChange={handlePasswordChange}
-              placeholder="Enter new password"
-              className="h-10 w-full border-gray-300 rounded p-2 mb-2"
-            />
-            <button className="px-6 py-2 bg-blue-500 text-white rounded">
-              Update Password
-            </button>
-          </div>
-        {/* )} */}
+        <div className="mt-4">
+          <input
+            type="password"
+            value={newPassword}
+            onChange={handlePasswordChange}
+            placeholder="Enter new password"
+            className="h-10 w-full border-gray-300 rounded p-2 mb-2"
+          />
+          <button className="px-6 py-2 bg-blue-500 text-white rounded">
+            Update Password
+          </button>
+        </div>
       </div>
 
-      {/* Set Security Questions Section */}
       <div className="flex flex-col gap-2 py-6 border-b">
         <h2 className="font-semibold text-md">Set Security Questions</h2>
         <p className="text-sm text-gray-500 mb-2">
@@ -96,11 +89,11 @@ const SecuritySettings = () => {
         </div>
       </div>
 
-      {/* Enable/Disable Two-Factor Authentication Section */}
       <div className="flex flex-col gap-2 py-6 border-b">
         <h2 className="font-semibold text-md">Two-Factor Authentication</h2>
         <p className="text-sm text-gray-500 mb-2">
-          Add an extra layer of security to your account by enabling two-factor authentication.
+          Add an extra layer of security to your account by enabling two-factor
+          authentication.
         </p>
         <div className="flex items-center space-x-4">
           <button
@@ -113,7 +106,6 @@ const SecuritySettings = () => {
         </div>
       </div>
 
-      {/* Last Login Details Section */}
       <div className="flex flex-col gap-2 py-6 border-b">
         <h2 className="font-semibold text-md">Last Login Details</h2>
         <p className="text-sm text-gray-500 mb-2">
@@ -124,11 +116,11 @@ const SecuritySettings = () => {
         </div>
       </div>
 
-      {/* Device Management Section */}
       <div className="flex flex-col gap-2 py-6">
         <h2 className="font-semibold text-md">Device Management</h2>
         <p className="text-sm text-gray-500 mb-2">
-          View and manage the devices that are currently logged into your account.
+          View and manage the devices that are currently logged into your
+          account.
         </p>
         <div className="bg-gray-100 p-4 rounded-lg">
           <ul>

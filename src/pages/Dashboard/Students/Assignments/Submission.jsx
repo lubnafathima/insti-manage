@@ -13,7 +13,7 @@ const submissionHeader = [
 const getDateAfterDays = (days) => {
   const date = new Date();
   date.setDate(date.getDate() + days);
-  return date.toLocaleDateString(); // Formats date as MM/DD/YYYY
+  return date.toLocaleDateString(); 
 };
 
 const assignmentData = [

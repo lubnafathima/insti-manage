@@ -1,7 +1,6 @@
 import TitleComponent from "../../../../styledComponents/TitleComponent";
 import { useState } from "react";
 
-// Sample data for integrations
 const sampleGoogleClassroomStatus = "Linked";
 const sampleGoogleCalendarStatus = "Linked";
 const sampleLMSIntegrationStatus = "Enabled";
@@ -11,17 +10,14 @@ const Integrations = () => {
   const [isGoogleCalendarLinked, setIsGoogleCalendarLinked] = useState(true);
   const [isLMSIntegrationEnabled, setIsLMSIntegrationEnabled] = useState(true);
 
-  // Toggle Google Classroom Link
   const handleGoogleClassroomToggle = () => {
     setIsGoogleClassroomLinked((prevState) => !prevState);
   };
 
-  // Toggle Google Calendar Link
   const handleGoogleCalendarToggle = () => {
     setIsGoogleCalendarLinked((prevState) => !prevState);
   };
 
-  // Toggle LMS Integration
   const handleLMSToggle = () => {
     setIsLMSIntegrationEnabled((prevState) => !prevState);
   };
@@ -30,11 +26,11 @@ const Integrations = () => {
     <div>
       <TitleComponent title="Integrations" />
 
-      {/* Google Classroom Integration Section */}
       <div className="flex flex-col gap-2 py-6 border-b">
         <h2 className="font-semibold text-md">Google Classroom</h2>
         <p className="text-sm text-gray-500 mb-2">
-          Link your Google Classroom to manage assignments and class activities directly from the dashboard.
+          Link your Google Classroom to manage assignments and class activities
+          directly from the dashboard.
         </p>
         <div className="flex items-center space-x-4">
           <button
@@ -47,11 +43,11 @@ const Integrations = () => {
         </div>
       </div>
 
-      {/* Google Calendar Integration Section */}
       <div className="flex flex-col gap-2 py-6 border-b">
         <h2 className="font-semibold text-md">Google Calendar</h2>
         <p className="text-sm text-gray-500 mb-2">
-          Integrate Google Calendar to sync your schedule with your class events and deadlines.
+          Integrate Google Calendar to sync your schedule with your class events
+          and deadlines.
         </p>
         <div className="flex items-center space-x-4">
           <button
@@ -64,11 +60,13 @@ const Integrations = () => {
         </div>
       </div>
 
-      {/* LMS Integration Section */}
       <div className="flex flex-col gap-2 py-6 border-b">
-        <h2 className="font-semibold text-md">Learning Management System (LMS)</h2>
+        <h2 className="font-semibold text-md">
+          Learning Management System (LMS)
+        </h2>
         <p className="text-sm text-gray-500 mb-2">
-          Enable integration with your institution’s Learning Management System (LMS) for seamless course management.
+          Enable integration with your institution’s Learning Management System
+          (LMS) for seamless course management.
         </p>
         <div className="flex items-center space-x-4">
           <button

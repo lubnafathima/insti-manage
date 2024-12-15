@@ -196,9 +196,9 @@ export const MENU_LIST = {
       path: "/students/notifications",
     },
     {
-      name: "Parentportal",
+      name: "Parent Portal",
       icon: <MdSettings className="w-6 h-6" />,
-      path: "/students/parentportal",
+      path: "/students/parent-portal",
     },
     {
       name: "Settings",

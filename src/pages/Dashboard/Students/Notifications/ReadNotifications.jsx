@@ -31,7 +31,6 @@ const ReadNotifications = () => {
   const [notifications, setNotifications] = useState(initialNotifications);
   const [selectedNotifications, setSelectedNotifications] = useState([]);
 
-  // Toggle read/unread status for a specific notification
   const toggleReadStatus = (id) => {
     const updatedNotifications = notifications.map((notification) =>
       notification.id === id
@@ -41,7 +40,6 @@ const ReadNotifications = () => {
     setNotifications(updatedNotifications);
   };
 
-  // Toggle selection of a notification
   const toggleSelectNotification = (id) => {
     setSelectedNotifications((prevSelected) =>
       prevSelected.includes(id)
@@ -50,7 +48,6 @@ const ReadNotifications = () => {
     );
   };
 
-  // Batch Mark as Read/Unread
   const toggleBatchReadStatus = () => {
     const areAllRead = selectedNotifications.every(
       (id) =>
@@ -68,7 +65,6 @@ const ReadNotifications = () => {
     <div className="min-h-screen py-10 px-4">
       <h1 className="text-2xl font-semibold mb-4">Read Notifications</h1>
 
-      {/* Batch Marking Section */}
       {selectedNotifications.length > 0 && (
         <button
           onClick={toggleBatchReadStatus}
@@ -85,7 +81,6 @@ const ReadNotifications = () => {
         </button>
       )}
 
-      {/* Notifications Table */}
       <table className="min-w-full table-auto border-collapse bg-white border border-gray-300">
         <thead className="bg-gray-100">
           <tr>
