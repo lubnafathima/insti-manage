@@ -224,9 +224,14 @@ export const MENU_LIST = {
       path: "/parents/attendance",
     },
     {
-      name: "Assignments & Exams",
+      name: "Assignments",
       icon: <MdPayments className="w-6 h-6" />,
-      path: "/parents/assignments-&-Exams",
+      path: "/parents/assignments",
+    },
+    {
+      name: "Exams",
+      icon: <MdPayments className="w-6 h-6" />,
+      path: "/parents/exams",
     },
     {
       name: "Communication",

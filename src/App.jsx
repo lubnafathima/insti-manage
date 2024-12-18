@@ -177,6 +177,11 @@ import StudentAppearance from "./pages/Dashboard/Students/Settings/Appearance";
 import StudentHelp from "./pages/Dashboard/Students/Settings/Help";
 // PARENTS
 import ParentsHome from "./pages/Dashboard/Parents/Home";
+import ParentsStudentPerformance from "./pages/Dashboard/Parents/StudentPerformance";
+import ParentsAttendance from "./pages/Dashboard/Parents/Attendance";
+import ParentsAssignments from "./pages/Dashboard/Parents/Assignments";
+import ParentsExams from "./pages/Dashboard/Parents/Exams";
+import ParentsCommunications from "./pages/Dashboard/Parents/Communications";
 
 function App() {
   return (
@@ -390,14 +395,8 @@ function App() {
               element={<StudentUpcomingDeadlines />}
             />
             <Route path="submission" element={<StudentSubmission />} />
-            <Route
-              path="grading"
-              element={<StudentAssignmentGrading />}
-            />
-            <Route
-              path="archive"
-              element={<StudentAssignmentArchive />}
-            />
+            <Route path="grading" element={<StudentAssignmentGrading />} />
+            <Route path="archive" element={<StudentAssignmentArchive />} />
             <Route
               path="calendar-view"
               element={<StudentAssignmentCalendarView />}
@@ -435,63 +434,165 @@ function App() {
           </Route>
           <Route path="attendance">
             <Route index element={<StudentAttendance />} />
-            <Route path="attendance-overview" element={<StudentAttendanceOverview />} />
-            <Route path="attendance-record" element={<StudentAttendanceRecord />} />
-            <Route path="attendance-by-subject" element={<StudentAttendanceBySubject />} />
+            <Route
+              path="attendance-overview"
+              element={<StudentAttendanceOverview />}
+            />
+            <Route
+              path="attendance-record"
+              element={<StudentAttendanceRecord />}
+            />
+            <Route
+              path="attendance-by-subject"
+              element={<StudentAttendanceBySubject />}
+            />
             <Route path="absence-history" element={<StudentAbsenceHistory />} />
-            <Route path="attendance-warnings" element={<StudentAttendanceWarnings />} />
-            <Route path="attendance-analysis" element={<StudentAttendanceAnalysis />} />
-            <Route path="attendance-download-report" element={<StudentAttendanceDownloadReport />} />
+            <Route
+              path="attendance-warnings"
+              element={<StudentAttendanceWarnings />}
+            />
+            <Route
+              path="attendance-analysis"
+              element={<StudentAttendanceAnalysis />}
+            />
+            <Route
+              path="attendance-download-report"
+              element={<StudentAttendanceDownloadReport />}
+            />
           </Route>
           <Route path="reports">
             <Route index element={<StudentReports />} />
-            <Route path="performance-summary" element={<StudentPerformanceSummary />} />
+            <Route
+              path="performance-summary"
+              element={<StudentPerformanceSummary />}
+            />
             <Route path="grade-Report" element={<StudentGradeReport />} />
-            <Route path="assignment-performance" element={<StudentAssignmentPerformance />} />
-            <Route path="exam-performance" element={<StudentExamPerformance />} />
-            <Route path="attendance-report" element={<StudentAttendanceReport />} />
-            <Route path="progress-tracking" element={<StudentProgressTracking />} />
+            <Route
+              path="assignment-performance"
+              element={<StudentAssignmentPerformance />}
+            />
+            <Route
+              path="exam-performance"
+              element={<StudentExamPerformance />}
+            />
+            <Route
+              path="attendance-report"
+              element={<StudentAttendanceReport />}
+            />
+            <Route
+              path="progress-tracking"
+              element={<StudentProgressTracking />}
+            />
           </Route>
           <Route path="communication">
             <Route index element={<StudentCommunication />} />
             <Route path="announcements" element={<StudentAnnouncements />} />
-            <Route path="contact-teachers" element={<StudentContactTeachers />} />
-            <Route path="class-discussions" element={<StudentClassDiscussions />} />
+            <Route
+              path="contact-teachers"
+              element={<StudentContactTeachers />}
+            />
+            <Route
+              path="class-discussions"
+              element={<StudentClassDiscussions />}
+            />
             <Route path="Support-tickets" element={<StudentSupportTickets />} />
-            <Route path="notifications" element={<StudentCommunicationNotifications />} />
+            <Route
+              path="notifications"
+              element={<StudentCommunicationNotifications />}
+            />
             <Route path="attachments" element={<StudentAttachments />} />
             <Route path="history" element={<StudentCommunicationHistory />} />
           </Route>
           <Route path="notifications">
             <Route index element={<StudentNotifications />} />
-            <Route path="categorized-notifications" element={<StudentCategorizedNotifications />} />
-            <Route path="notification-details" element={<StudentNotificationDetails />} />
-            <Route path="actionable-notifications" element={<StudentActionableNotifications />} />
-            <Route path="read-notifications" element={<StudentReadNotifications />} />
-            <Route path="search-notifications" element={<StudentSearchNotifications />} />
-            <Route path="notification-settings" element={<StudentNotificationSettings />} />
+            <Route
+              path="categorized-notifications"
+              element={<StudentCategorizedNotifications />}
+            />
+            <Route
+              path="notification-details"
+              element={<StudentNotificationDetails />}
+            />
+            <Route
+              path="actionable-notifications"
+              element={<StudentActionableNotifications />}
+            />
+            <Route
+              path="read-notifications"
+              element={<StudentReadNotifications />}
+            />
+            <Route
+              path="search-notifications"
+              element={<StudentSearchNotifications />}
+            />
+            <Route
+              path="notification-settings"
+              element={<StudentNotificationSettings />}
+            />
           </Route>
           <Route path="parent-portal">
             <Route index element={<StudentParentPortal />} />
-            <Route path="parent-information" element={<StudentParentInformation />} />
-            <Route path="academic-reports" element={<StudentAcademicReports />} />
-            <Route path="progress-tracking" element={<StudentParentPortalProgressTracking />} />
-            <Route path="attendance-reports" element={<StudentAttendanceReports />} />
-            <Route path="communication" element={<StudentParentPortalCommunication />} />
-            <Route path="notifications" element={<StudentParentPortalNotifications />} />
-            <Route path="meeting-schedules" element={<StudentMeetingSchedules />} />
-            <Route path="parental-permissions" element={<StudentParentalPermissions />} />
+            <Route
+              path="parent-information"
+              element={<StudentParentInformation />}
+            />
+            <Route
+              path="academic-reports"
+              element={<StudentAcademicReports />}
+            />
+            <Route
+              path="progress-tracking"
+              element={<StudentParentPortalProgressTracking />}
+            />
+            <Route
+              path="attendance-reports"
+              element={<StudentAttendanceReports />}
+            />
+            <Route
+              path="communication"
+              element={<StudentParentPortalCommunication />}
+            />
+            <Route
+              path="notifications"
+              element={<StudentParentPortalNotifications />}
+            />
+            <Route
+              path="meeting-schedules"
+              element={<StudentMeetingSchedules />}
+            />
+            <Route
+              path="parental-permissions"
+              element={<StudentParentalPermissions />}
+            />
             <Route path="activity-logs" element={<StudentActivityLogs />} />
           </Route>
           <Route path="settings">
             <Route index element={<StudentSettings />} />
-            <Route path="profile-settings" element={<StudentProfileSettings />} />
-            <Route path="account-settings" element={<StudentAccountSettings />} />
-            <Route path="notification-settings" element={<StudentSettingsNotification />} />
-            <Route path="privacy-settings" element={<StudentPrivacySettings />} />
+            <Route
+              path="profile-settings"
+              element={<StudentProfileSettings />}
+            />
+            <Route
+              path="account-settings"
+              element={<StudentAccountSettings />}
+            />
+            <Route
+              path="notification-settings"
+              element={<StudentSettingsNotification />}
+            />
+            <Route
+              path="privacy-settings"
+              element={<StudentPrivacySettings />}
+            />
             <Route path="security" element={<StudentSecurity />} />
-            <Route path="academic-preferences" element={<StudentAcademicPreferences />} />
-            <Route path="communication-preferences" element={<StudentCommunicationPreferences />} />
+            <Route
+              path="academic-preferences"
+              element={<StudentAcademicPreferences />}
+            />
+            <Route
+              path="communication-preferences"
+              element={<StudentCommunicationPreferences />}
+            />
             <Route path="linked-accounts" element={<StudentLinkedAccounts />} />
             <Route path="appearance" element={<StudentAppearance />} />
             <Route path="help" element={<StudentHelp />} />
@@ -508,6 +609,14 @@ function App() {
         >
           <Route index element={<ParentsHome />} />
           <Route path="home" element={<ParentsHome />} />
+          <Route
+            path="student-performance"
+            element={<ParentsStudentPerformance />}
+          />
+          <Route path="attendance" element={<ParentsAttendance />} />
+          <Route path="assignments" element={<ParentsAssignments />} />
+          <Route path="exams" element={<ParentsExams />} />
+          <Route path="communication" element={<ParentsCommunications />} />
         </Route>
       </Routes>
     </RoleProvider>
