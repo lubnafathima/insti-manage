@@ -8,7 +8,7 @@ import Footer from "../components/LandingPage/Footer";
 
 const LandingPage = () => {
   return (
-    <div className="bg-white min-h-screen font-[Helvetica] tracking-wide flex flex-col items-center">
+    <div className="bg-black min-h-screen font-[Helvetica] tracking-wide flex flex-col items-center">
       <Main />
       <Features />
       <Testimonials />
