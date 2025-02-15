@@ -4,6 +4,10 @@ InstiManage is an advanced, scalable institution management system designed to e
 
 ---
 
+![Untitled design](https://github.com/user-attachments/assets/6f947d16-415f-4d56-bc89-7eed0800d743)
+
+---
+
 ## Table of Contents
 
 1. [Overview](#overview)
